@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MH Consultants</title>
+
+    <link rel="icon" type="image/png" sizes="96x96" href="fab/android-icon-192x192.png">
+
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -20,12 +23,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
     <nav>
         <ul>
-            <li class="logo">M.H Consultant</li>
+            <li class="logo">M H Consultants</li>
             <li class="items"><a href="#home">Home</a></li>
             <li class="items"><a href="#services">Services</a></li>
             <li class="items"><a href="#contact">Contact Us</a></li>
@@ -35,53 +42,19 @@
     </nav>
 
     <section class="fistsection" id="home">
-           <div class="slide-box">
-            <div class="img-slider">
-                <div class="slide active">
-                  <img src="images/r1.jpg" alt="">
-                  <div class="info">
-                    <h2>Welcome to Our Website M.H Consultant</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                </div>
-                <div class="slide">
-                  <img src="images/r2.jpg" alt="">
-                  <div class="info">
-                    <h2>Providing Good Services</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                </div>
-                <div class="slide">
-                  <img src="images/r3.jpg" alt="">
-                  <div class="info">
-                    <h2>Related to your Business</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                </div>
-                <div class="slide">
-                  <img src="images/r4.jpg" alt="">
-                  <div class="info">
-                    <h2>GST</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                </div>
-                <div class="slide">
-                  <img src="images/r5.jpg" alt="">
-                  <div class="info">
-                    <h2>Finance....!</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                </div>
-                <div class="navigation">
-                  <div class="btn active"></div>
-                  <div class="btn"></div>
-                  <div class="btn"></div>
-                  <div class="btn"></div>
-                  <div class="btn"></div>
-                </div>
-              </div>
-           </div>
+               <div class="box-main">
+                   <div class="first-half">
+                       <p class="text-big">Welcome to M H Consultants</p>
+                       <p class="text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, esse voluptas impedit excepturi repellendus consequatur quisquam alias ipsam voluptatem ut repudiandae sit sapiente perferendis deleniti? Dicta voluptatibus atque aliquam laborum</p>
 
+                       <div class="button">
+                          <a href="#contact" class="btn">Contact</a>
+                       </div>
+                   </div>
+                   <div class="second-half">
+                       <img src="images/home-icon.png" alt="home-image">
+                   </div>
+               </div>
         <script>
             $(document).ready(function () {
                 $('.btn').click(function () {
@@ -193,14 +166,14 @@
                         <li>
                             <span><img src="images/call.png" alt="location"></span>
                             <span>
-                                +91-838-393-0805,<br>+91-752-993-4732
+                                +91-838-393-0805
                             </span>
                         </li>
                     </ul>
                 </div>
             </div>
             <!-- contact-form -->
-            <form action="https://formspree.io/f/mbjqpbyq" method="POST">
+            <form action="https://formspree.io/f/xvoddwap" method="POST">
                 <div class="contactform">
                     <h2>Send a Message</h2>
                     <div class="formbox">
@@ -227,7 +200,7 @@
                             <span>Write your message here.....</span>
                         </div>
                         <div class="inputbox w100">
-                            <input type="submit" value="Send">
+                            <input type="submit" value="Send" class="send">
                         </div>
                     </div>
 
@@ -262,11 +235,16 @@
         </div>
     </section>
     <!-- footer  -->
-    <footer class="background">
-        <p class="text-footer">
-            Copyright &#169; 2021-2022 mhconsultants.com - All rights reserved
-        </p>
+    <footer class="footer">
+        <p class="footer__title">MH Consultants</p>
+        <div class="footer__social">
+            <a target="_blank" href="https://www.facebook.com/" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+            <a target="_blank" href="https://www.instagram.com/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+            <a target="_blank" href="https://www.twitter.com/" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+        </div>
+        <p>&#169; 2021-2022 copyright all right reserved</p>
     </footer>
+
     <script src="js/index.js"></script>
 </body>
 
