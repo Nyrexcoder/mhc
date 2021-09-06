@@ -501,9 +501,8 @@ a{
     margin-bottom: var(--mb-4);
   }
 
-  
 .footer__icon{
-    font-size: 3rem;
+    font-size:3rem;
     color: #fff;
     margin: 0 var(--mb-2)
   }
