@@ -385,7 +385,7 @@ a{
     margin-bottom:2rem;
   }
   .footer__icon{
-    font-size: 1.5rem;
+    font-size: 3rem;
     color: #fff;
     margin: 0 1rem;
   }
@@ -616,7 +616,6 @@ a{
     margin-bottom: var(--mb-4);
   }
 
-  
 .footer__icon{
     font-size: 3rem;
     color: #fff;
