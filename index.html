@@ -9,7 +9,7 @@
 
     <link rel="icon" type="image/png" sizes="96x96" href="fab/android-icon-192x192.png">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
@@ -25,215 +25,393 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+<!--light-slider.css------------->
+    <link rel="stylesheet" type="text/css" href="css/lightslider.css">
+<!--Jquery-------------------->
+    <script type="text/javascript" src="js/jquery.js"></script>
+<!--lightslider.js--------------->
+    <script type="text/javascript" src="js/lightslider.js"></script>
+</head>
 
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li class="logo">M H Consultants</li>
-            <li class="items"><a href="#home">Home</a></li>
-            <li class="items"><a href="#services">Services</a></li>
-            <li class="items"><a href="#contact">Contact Us</a></li>
-            <li class="items"><a href="#about">About</a></li>
-            <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
-        </ul>
-    </nav>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">MH Consultants</a>
+            </div>
 
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact Us</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="index2.html" class="nav__link">LogIn</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        
     <section class="fistsection" id="home">
-               <div class="box-main">
-                   <div class="first-half">
-                       <p class="text-big">Welcome to M H Consultants</p>
-                       <p class="text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, esse voluptas impedit excepturi repellendus consequatur quisquam alias ipsam voluptatem ut repudiandae sit sapiente perferendis deleniti? Dicta voluptatibus atque aliquam laborum</p>
+        <div class="box-main">
+            <div class="first-half">
+                <p class="text-big">Welcome to M H Consultants</p>
+                <p class="text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, esse voluptas impedit excepturi repellendus consequatur quisquam alias ipsam voluptatem ut repudiandae sit sapiente perferendis deleniti? Dicta voluptatibus atque aliquam laborum</p>
 
-                       <div class="button">
-                          <a href="#contact" class="btn">Contact</a>
-                       </div>
-                   </div>
-                   <div class="second-half">
-                       <img src="images/home-icon.png" alt="home-image">
-                   </div>
-               </div>
-        <script>
-            $(document).ready(function () {
-                $('.btn').click(function () {
-                    $('.items').toggleClass("show");
-                    $('ul li').toggleClass("hide");
-                });
-            });
-        </script>
-
-    </section>
-
-    <!-- script -->
-    <!-- <script>
-                var typed = new Typed('.type', {
-                    // Waits 1000ms after typing "First"
-                    strings: ['Welcome to M.H. CONSULTANTS', 'We are providing some Service like....', 'GST Registration', 'GST Return', 'Income Tax Filling', 'Financial Advisory',
-                        'Insurance Advisory', 'Book Keeping', 'Digital Signature', 'And much more...!'],
-                    typeSpeed: 70,
-                    backSpeed: 60,
-                    loop: true,
-                });
-            </script> -->
-
-
-
-    <!-- Service section -->
-    <section class="services" id="services">
-        <!-- heading -->
-        <div class="s-heading">
-            <h1>Ser<font color="#4a90e2">vic</font>es</h1>
-            <p>We provide The Best In Class Services For Our Customers.</p>
-        </div>
-        <!-- services box container -->
-        <div class="s-box-container">
-            <div class="flex">
-                <!-- box -->
-                <div class="s-box">
-                    <!-- top-bar -->
-                    <div class="bar"></div>
-                    <!-- img -->
-                    <img src="images/1.png" alt="1">
-                    <!-- services name -->
-                    <h1>Spend Money</h1>
-                    <!-- details -->
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor officiis rem facilis, ex modi
-                        ipsam velit repudiandae reiciendis sint ut aperiam temporibus natus, unde ipsa aspernatur
-                        accusamus doloribus, porro exercitationem. lo</p>
-                    <!-- btn -->
-                    <a href="" class="s-btn">Read</a>
-                </div>
-
-                <!-- box -->
-                <div class="s-box">
-                    <!-- top-bar -->
-                    <div class="bar"></div>
-                    <!-- img -->
-                    <img src="images/2.png" alt="1">
-                    <!-- services name -->
-                    <h1>Set Budget</h1>
-                    <!-- details -->
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor officiis rem facilis, ex modi
-                        ipsam velit repudiandae reiciendis sint ut aperiam temporibus natus, unde ipsa aspernatur
-                        accusamus doloribus, porro exercitationem.</p>
-                    <!-- btn -->
-                    <a href="" class="s-btn">Read</a>
-                </div>
-
-
-                <!-- box -->
-                <div class="s-box">
-                    <!-- top-bar -->
-                    <div class="bar"></div>
-                    <!-- img -->
-                    <img src="images/3.png" alt="1">
-                    <!-- services name -->
-                    <h1>Security</h1>
-                    <!-- details -->
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor officiis rem facilis, ex modi
-                        ipsam velit repudiandae reiciendis sint ut aperiam temporibus natus, unde ipsa aspernatur
-                        accusamus doloribus, porro exercitationem.</p>
-                    <!-- btn -->
-                    <a href="" class="s-btn">Read</a>
+                <div class="button">
+                   <a href="#contact" class="btn">Contact</a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- contact page -->
-    <section class="form-section" id="contact">
-        <div class="container2">
-            <div class="contactinfo">
-                <div>
-                    <h2>Contact Info</h2>
-                    <ul class="info">
-                        <li>
-                            <span><img src="images/location.png" alt="location"></span>
-                            <span>
-                                Rohua,Near Bela Mode,Pusha Road,Muzaffarpur,Bihar 842002
-                            </span>
-                        </li>
-
-                        <li>
-                            <span><img src="images/mail.png" alt="location"></span>
-                            <span>
-                                mhariconsult2020@gmail.com
-                            </span>
-                        </li>
-
-                        <li>
-                            <span><img src="images/call.png" alt="location"></span>
-                            <span>
-                                +91-838-393-0805
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- contact-form -->
-            <form action="https://formspree.io/f/xvoddwap" method="POST">
-                <div class="contactform">
-                    <h2>Send a Message</h2>
-                    <div class="formbox">
-                        <div class="inputbox w50">
-                            <input type="text" name="First Name" required>
-                            <span>First Name</span>
-                        </div>
-                        <div class="inputbox w50">
-                            <input type="text" name="Last Name" required>
-                            <span>Last Name</span>
-                        </div>
-
-                        <div class="inputbox w50">
-                            <input type="text" name="Email Address" required>
-                            <span>Email Address</span>
-                        </div>
-
-                        <div class="inputbox w50">
-                            <input type="text" name="Phone Number" required>
-                            <span>Phone Number</span>
-                        </div>
-                        <div class="inputbox w100">
-                            <textarea name="Message" required></textarea>
-                            <span>Write your message here.....</span>
-                        </div>
-                        <div class="inputbox w100">
-                            <input type="submit" value="Send" class="send">
-                        </div>
-                    </div>
-
-                </div>
-        </div>
-        </form>
-        </div>
-    </section>
-    <!-- About page -->
-    <section class="about-section" id="about">
-        <div class="box">
-            <div class="imgBx">
-                <img src="https://source.unsplash.com/random" alt="">
-            </div>
-            <div class="content">
-                <h2>About Us</h2>
-                <span>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit voluptate itaque rem
-                    cupiditate eaque sint, deleniti aspernatur non earum quos!
-                </span>
-                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi molestias ullam
-                    nihil enim aperiam perspiciatis, voluptatibus provident repellendus voluptates fugiat minima
-                    aliquam omnis soluta dolore esse sit et? Sunt totam, maiores nostrum, asperiores veniam,<span
-                        class="moreText">test mollitia ullam nemo a voluptatum ex? Cumque dignissimos quidem, illo
-                        mollitia officia excepturi reiciendis soluta. Lorem ipsum dolor sit, amet consectetur
-                        adipisicing elit. Nulla praesentium quas, voluptatem dolor quod voluptas quidem voluptate
-                        omnis reprehenderit aspernatur laudantium officia, sapiente, tempore non! Aperiam dolores
-                        explicabo doloremque nobis itaque quas deserunt, enim quos quae odit similique dolor libero
-                        a illo, minima laboriosam earum at, vitae tempore sit consectetur?</span></p>
-                <button class="read-more-btn">Read More</button>
+            <div class="second-half">
+                <img src="images/home-icon.png" alt="home-image">
             </div>
         </div>
+</section>
+
+<!-- Service section -->
+<section class="services" id="services">
+ <!-- heading -->
+ <div class="s-heading">
+     <h1>Ser<font color="#4a90e2">vic</font>es</h1>
+     <p>We provide The Best In Class Services For Our Customers. <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, sit enim exercitationem, impedit autem commodi ipsum, reiciendis assumenda atque nobis pariatur vel? Dolore molestias sunt modi consectetur dicta voluptate nostrum.</p>
+ </div>
+ <!-- services box container -->
+ <div class="s-box-container">
+     <div class="flex">
+        <section class="slider">
+            <ul id="autoWidth" class="cs-hidden">
+            <!--1------------------------------------>	
+            <li class="item-a">
+        <!--box-slider--------------->
+            <div class="box">
+            <!--img-box---------->
+            <div class="slide-img">
+            <img alt="1" src="https://source.unsplash.com/weekly?profit">
+            <!--overlayer---------->
+            <div class="overlay">
+            <!--buy-btn------>	
+            <a href="#contact" class="buy-btn">Apply Now</a>	
+            </div>
+            </div>
+            <!--detail-box--------->
+            <div class="detail-box">
+            <!--type-------->
+            <div class="type">
+            <a href="#">GST Return</a>
+            <span>Noe Arrival</span>
+            </div>
+            <!--price-------->
+            <a href="#" class="price">₹_</a>
+                
+            </div>
+            
+            </div>		
+        </li>
+            <!--2------------------------------------>	
+          <li class="item-b">
+        <!--box-slider--------------->
+            <div class="box">
+            <!--img-box---------->
+            <div class="slide-img">
+            <img alt="2" src="https://source.unsplash.com/weekly?tax">
+            <!--overlayer---------->
+            <div class="overlay">
+            <!--buy-btn------>	
+            <a href="#contact" class="buy-btn">Apply Now</a>	
+            </div>
+            </div>
+            <!--detail-box--------->
+            <div class="detail-box">
+            <!--type-------->
+            <div class="type">
+            <a href="#">GST Registration</a>
+            <span>Noe Arrival</span>
+            </div>
+            <!--price-------->
+            <a href="#" class="price">₹_</a>
+                
+            </div>
+            
+            </div>		
+        </li>
+            <!--3------------------------------------>	
+          <li class="item-c">
+        <!--box-slider--------------->
+            <div class="box">
+            <!--img-box---------->
+            <div class="slide-img">
+            <img alt="3" src="https://source.unsplash.com/weekly?corporate">
+            <!--overlayer---------->
+            <div class="overlay">
+            <!--buy-btn------>	
+            <a href="#contact" class="buy-btn">Apply Now</a>	
+            </div>
+            </div>
+            <!--detail-box--------->
+            <div class="detail-box">
+            <!--type-------->
+            <div class="type">
+            <a href="#">Book Keeping</a>
+            <span>Noe Arrival</span>
+            </div>
+            <!--price-------->
+            <a href="#" class="price">₹_</a>
+                
+            </div>
+            
+            </div>		
+        </li>
+            <!--4------------------------------------>	
+          <li class="item-d">
+        <!--box-slider--------------->
+            <div class="box">
+            <!--img-box---------->
+            <div class="slide-img">
+            <img alt="4" src="https://source.unsplash.com/weekly?finance">
+            <!--overlayer---------->
+            <div class="overlay">
+            <!--buy-btn------>	
+            <a href="#contact" class="buy-btn">Apply Now</a>	
+            </div>
+            </div>
+            <!--detail-box--------->
+            <div class="detail-box">
+            <!--type-------->
+            <div class="type">
+            <a href="#">Income Tax Filling</a>
+            <span>Noe Arrival</span>
+            </div>
+            <!--price-------->
+            <a href="#" class="price">₹_</a>
+                
+            </div>
+            
+            </div>		
+        </li>
+            <!--5------------------------------------>	
+          <li class="item-e">
+        <!--box-slider--------------->
+            <div class="box">
+            <!--img-box---------->
+            <div class="slide-img">
+            <img alt="5" src="https://source.unsplash.com/weekly?company">
+            <!--overlayer---------->
+            <div class="overlay">
+            <!--buy-btn------>	
+            <a href="#contact" class="buy-btn">Apply Now</a>	
+            </div>
+            </div>
+            <!--detail-box--------->
+            <div class="detail-box">
+            <!--type-------->
+            <div class="type">
+            <a href="#">MSME Registration</a>
+            <span>Noe Arrival</span>
+            </div>
+            <!--price-------->
+            <a href="#" class="price">₹_</a>
+                
+            </div>
+            
+            </div>		
+        </li>
+            <!--6------------------------------------>	
+          <li class="item-f">
+        <!--box-slider--------------->
+            <div class="box">
+            <!--img-box---------->
+            <div class="slide-img">
+            <img alt="6" src="https://source.unsplash.com/weekly?manage">
+            <!--overlayer---------->
+            <div class="overlay">
+            <!--buy-btn------>	
+            <a href="#contact" class="buy-btn">Apply Now</a>	
+            </div>
+            </div>
+            <!--detail-box--------->
+            <div class="detail-box">
+            <!--type-------->
+            <div class="type">
+            <a href="#">Financial Advisory</a>
+            <span>Noe Arrival</span>
+            </div>
+            <!--price-------->
+            <a href="#" class="price">₹_</a>
+                
+            </div>
+            
+            </div>		
+        </li>
+            <!--7------------------------------------>	
+          <li class="item-g">
+        <!--box-slider--------------->
+            <div class="box">
+            <!--img-box---------->
+            <div class="slide-img">
+            <img alt="7" src="https://source.unsplash.com/weekly?business">
+            <!--overlayer---------->
+            <div class="overlay">
+            <!--buy-btn------>	
+            <a href="#contact" class="buy-btn">Apply Now</a>	
+            </div>
+            </div>
+            <!--detail-box--------->
+            <div class="detail-box">
+            <!--type-------->
+            <div class="type">
+            <a href="#">Insurance Advisory</a>
+            <span>Noe Arrival</span>
+            </div>
+            <!--price-------->
+            <a href="#" class="price">₹_</a>
+                
+            </div>
+            
+            </div>		
+        </li>
+            <!--8------------------------------------>	
+          <li class="item-h">
+        <!--box-slider--------------->
+            <div class="box">
+            <!--img-box---------->
+            <div class="slide-img">
+            <img alt="8" src="https://source.unsplash.com/weekly?account">
+            <!--overlayer---------->
+            <div class="overlay">
+            <!--buy-btn------>	
+            <a href="#contact" class="buy-btn">Apply Now</a>	
+            </div>
+            </div>
+            <!--detail-box--------->
+            <div class="detail-box">
+            <!--type-------->
+            <div class="type">
+            <a href="#">Company Registration</a>
+            <span>Noe Arrival</span>
+            </div>
+            <!--price-------->
+            <a href="#" class="price">₹_</a>
+                
+            </div>
+            
+            </div>		
+        </li>
+          
+        </ul>
+            </section>
+            
+     </div>
     </section>
+     </div>
+    
+
+<!-- contact page -->
+<section class="form-section" id="contact">
+ <div class="container2">
+     <div class="contactinfo">
+         <div>
+             <h2>Contact Info</h2>
+             <ul class="info">
+                 <li>
+                     <span><img src="images/location.png" alt="location"></span>
+                     <span>
+                         Rohua,Near Bela Mode,Pusha Road,Muzaffarpur,Bihar 842002
+                     </span>
+                 </li>
+
+                 <li>
+                     <span><img src="images/mail.png" alt="location"></span>
+                     <span>
+                         mhariconsult2020@gmail.com
+                     </span>
+                 </li>
+
+                 <li>
+                     <span><img src="images/call.png" alt="location"></span>
+                     <span>
+                         +91-838-393-0805
+                     </span>
+                 </li>
+             </ul>
+         </div>
+         <!-- https://formspree.io/f/xvoddwap -->
+     </div>
+     <!-- contact-form -->
+     <form action="" method="POST">
+         <div class="contactform">
+             <h2>Send a Message</h2>
+             <div class="formbox">
+                 <div class="inputbox w50">
+                     <input type="text" name="First Name" required>
+                     <span>First Name</span>
+                 </div>
+                 <div class="inputbox w50">
+                     <input type="text" name="Purpose" required>
+                     <span>Purpose</span>
+                 </div>
+
+                 <div class="inputbox w50">
+                     <input type="text" name="Email Address" required>
+                     <span>Email Address</span>
+                 </div>
+
+                 <div class="inputbox w50">
+                     <input type="text" name="Phone Number" required>
+                     <span>Phone Number</span>
+                 </div>
+                 <div class="inputbox w100">
+                     <textarea name="Message" required></textarea>
+                     <span>Write your message here.....</span>
+                 </div>
+                 <div class="inputbox w100">
+                     <input type="submit" value="Send" class="send">
+                 </div>
+             </div>
+
+         </div>
+ </div>
+ </form>
+ </div>
+</section>
+<!-- About page -->
+<section class="about-section" id="about">
+ <div class="about-box">
+     <div class="imgBx">
+         <img src="https://source.unsplash.com/random" alt="">
+     </div>
+     <div class="content">
+         <h2>About Us</h2>
+         <span>
+             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit voluptate itaque rem
+             cupiditate eaque sint, deleniti aspernatur non earum quos!
+         </span>
+         <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi molestias ullam
+             nihil enim aperiam perspiciatis, voluptatibus provident repellendus voluptates fugiat minima
+             aliquam omnis soluta dolore esse sit et? Sunt totam, maiores nostrum, asperiores veniam,<span
+                 class="moreText">test mollitia ullam nemo a voluptatum ex? Cumque dignissimos quidem, illo
+                 mollitia officia excepturi reiciendis soluta. Lorem ipsum dolor sit, amet consectetur
+                 adipisicing elit. Nulla praesentium quas, voluptatem dolor quod voluptas quidem voluptate
+                 omnis reprehenderit aspernatur laudantium officia, sapiente, tempore non! Aperiam dolores
+                 explicabo doloremque nobis itaque quas deserunt, enim quos quae odit similique dolor libero
+                 a illo, minima laboriosam earum at, vitae tempore sit consectetur?</span></p>
+         <button class="read-more-btn">Read More</button>
+     </div>
+ </div>
+</section>
+
+    </main>
+
     <!-- footer  -->
     <footer class="footer">
         <p class="footer__title">MH Consultants</p>
