@@ -7,15 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MH Consultants</title>
 
-    <link rel="icon" type="image/png" sizes="96x96" href="fab/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/fab/android-icon-192x192.png">
 
-    <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" charset="utf-8"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"charset="utf-8"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,13 +26,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 <!--light-slider.css------------->
-    <link rel="stylesheet" type="text/css" href="css/lightslider.css">
+    <link rel="stylesheet" type="text/css" href="/css/lightslider.css">
 <!--Jquery-------------------->
-    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="/js/jquery.js"></script>
 <!--lightslider.js--------------->
-    <script type="text/javascript" src="js/lightslider.js"></script>
+    <script type="text/javascript" src="/js/lightslider.js"></script>
 </head>
 
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
@@ -39,52 +40,90 @@
 
 <body>
     <!--===== HEADER =====-->
-    <header class="l-header">
-        <nav class="nav bd-grid">
-            <div>
-                <a href="#" class="nav__logo">MH Consultants</a>
-            </div>
+    <nav>
+        <div class="wrapper">
+          <div class="logo">
+              <a href="#">MH Consultants</a>
+        </div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li>
+              <a href="#Only-contact" class="desktop-item">Contact Us</a>
+            <li>
+              <a href="#services" class="desktop-item">Services</a>
+              <input type="checkbox" id="showMega">
+              <label for="showMega" class="mobile-item">services</label>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="row">
+                    <img src="/images/Gst registration.jpg" alt="">
+                  </div>
+                  <div class="row">
+                    <ul class="mega-links">
+                      <li><a href="gstRegistration.html">GST Registration</a></li>
+                      <li><a href="Return income Tax Filling.html">Return-Income-Tax-Filling</a></li>
+                      <li><a href="#">PAN</a></li>
+                      <li><a href="#">TAN</a></li>
+                      <li><a href="#">Book Keeping</a></li>
+                    </ul>
+                  </div>                       
+                  <div class="row">
+                    <ul class="mega-links">
+                      <li><a href="#">Digital Signature</a></li>
+                      <li><a href="#">MSME Registration</a></li>
+                      <li><a href="#">Financial Advisory</a></li>
+                      <li><a href="#">Insurance Advisory</a></li>
+                      <li><a href="#">Pollutin & Other Licensing</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <ul class="mega-links">
+                      <li><a href="#">Company Registration</a></li>
+                      <li><a href="#">ROC Filling(XBRL)</a></li>
+                      <li><a href="#">Legal Drafting</a></li>
+                      <li><a href="#">ISO</a></li>
+                      <li><a href="#">FSSAI</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="/pages/Login&SignUp.html">LogIn</a></li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+      </nav>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact Us</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="index2.html" class="nav__link">LogIn</a></li>
-                </ul>
-            </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-        </nav>
-    </header>
-
+  <!-- Main Body work -->
+  <section>
     <main class="l-main">
-        
-    <section class="fistsection" id="home">
-        <div class="box-main">
-            <div class="first-half">
-                <p class="text-big">Welcome to M H Consultants</p>
-                <p class="text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, esse voluptas impedit excepturi repellendus consequatur quisquam alias ipsam voluptatem ut repudiandae sit sapiente perferendis deleniti? Dicta voluptatibus atque aliquam laborum</p>
-
-                <div class="button">
-                   <a href="#contact" class="btn">Contact</a>
+        <section class="fistsection" id="home">
+            <div class="box-main">
+                <div class="first-half">
+                    <p class="text-big">Welcome to M H Consultants</p>
+                    <p class="text-small">We believe businesses can grow with a conscience, and succeed with a soul and that they can do it with strong determination. That's why we've created an ecosystem uniting experts with various consultancy services to help businesses grow better every day.</p>
+    
+                    <div class="button">
+                       <a href="#Only-contact" class="btn">Contact</a>
+                    </div>
+                </div>
+                <div class="second-half">
+                    <img src="/images/home-icon.png" alt="home-image">
                 </div>
             </div>
-            <div class="second-half">
-                <img src="images/home-icon.png" alt="home-image">
-            </div>
-        </div>
-</section>
+  </section>
+  
 
 <!-- Service section -->
 <section class="services" id="services">
  <!-- heading -->
  <div class="s-heading">
      <h1>Ser<font color="#4a90e2">vic</font>es</h1>
-     <p>We provide The Best In Class Services For Our Customers. <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, sit enim exercitationem, impedit autem commodi ipsum, reiciendis assumenda atque nobis pariatur vel? Dolore molestias sunt modi consectetur dicta voluptate nostrum.</p>
+     <p>We provide The Best In Class Services For Our Customers. <br>M H Consultants is an interactive online platform that makes it faster and easier to get registration of business at various registration portals and also helping to grow their business smoothly, at a reasonable cost.</p>
  </div>
  <!-- services box container -->
  <div class="s-box-container">
@@ -101,14 +140,14 @@
             <!--overlayer---------->
             <div class="overlay">
             <!--buy-btn------>	
-            <a href="#contact" class="buy-btn">Apply Now</a>	
+            <a href="Return income Tax Filling.html" class="buy-btn">Apply Now</a>	
             </div>
             </div>
             <!--detail-box--------->
             <div class="detail-box">
             <!--type-------->
             <div class="type">
-            <a href="#">GST Return</a>
+            <a href="#">Return-Income-Tax-Filling</a>
             <span>Noe Arrival</span>
             </div>
             <!--price-------->
@@ -128,7 +167,7 @@
             <!--overlayer---------->
             <div class="overlay">
             <!--buy-btn------>	
-            <a href="#contact" class="buy-btn">Apply Now</a>	
+            <a href="gstRegistration.html" class="buy-btn">Apply Now</a>	
             </div>
             </div>
             <!--detail-box--------->
@@ -315,30 +354,49 @@
     </section>
      </div>
     
+     <!-- About page -->
+<section class="about-section" id="about">
+    <div class="about-box">
+        <div class="imgBx">
+            <img src="https://source.unsplash.com/random" alt="">
+        </div>
+        <div class="content">
+            <h2>About Us</h2>
+            <span>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit voluptate itaque rem
+                cupiditate eaque sint, deleniti aspernatur non earum quos!
+            </span>
+            <p class="text">M H Consultants is an interactive online platform that makes it faster and easier to get registration of business at various registration portals and also helping to grow their business smoothly, at a reasonable cost. We believe businesses can <span
+                    class="moreText">grow with a conscience, and succeed with a soul and that they can do it with strong determination. That's why we've created an ecosystem uniting experts with various consultancy services to help businesses grow better every day.</span></p>
+            <button class="read-more-btn">Read More</button>
+        </div>
+    </div>
+   </section>
+       </main>
 
 <!-- contact page -->
-<section class="form-section" id="contact">
+<section class="form-section" id="Only-contact">
  <div class="container2">
      <div class="contactinfo">
          <div>
              <h2>Contact Info</h2>
              <ul class="info">
                  <li>
-                     <span><img src="images/location.png" alt="location"></span>
+                     <span><img src="/images/location.png" alt="location"></span>
                      <span>
                          Rohua,Near Bela Mode,Pusha Road,Muzaffarpur,Bihar 842002
                      </span>
                  </li>
 
                  <li>
-                     <span><img src="images/mail.png" alt="location"></span>
+                     <span><img src="/images/mail.png" alt="location"></span>
                      <span>
                          mhariconsult2020@gmail.com
                      </span>
                  </li>
 
                  <li>
-                     <span><img src="images/call.png" alt="location"></span>
+                     <span><img src="/images/call.png" alt="location"></span>
                      <span>
                          +91-838-393-0805
                      </span>
@@ -348,7 +406,7 @@
          <!-- https://formspree.io/f/xvoddwap -->
      </div>
      <!-- contact-form -->
-     <form action="" method="POST">
+     <form action="https://formspree.io/f/xvoddwap" method="POST">
          <div class="contactform">
              <h2>Send a Message</h2>
              <div class="formbox">
@@ -357,7 +415,7 @@
                      <span>First Name</span>
                  </div>
                  <div class="inputbox w50">
-                     <input type="text" name="Purpose" required>
+                     <input type="text" name="Purpose" id="purpose" required>
                      <span>Purpose</span>
                  </div>
 
@@ -384,33 +442,7 @@
  </form>
  </div>
 </section>
-<!-- About page -->
-<section class="about-section" id="about">
- <div class="about-box">
-     <div class="imgBx">
-         <img src="https://source.unsplash.com/random" alt="">
-     </div>
-     <div class="content">
-         <h2>About Us</h2>
-         <span>
-             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit voluptate itaque rem
-             cupiditate eaque sint, deleniti aspernatur non earum quos!
-         </span>
-         <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi molestias ullam
-             nihil enim aperiam perspiciatis, voluptatibus provident repellendus voluptates fugiat minima
-             aliquam omnis soluta dolore esse sit et? Sunt totam, maiores nostrum, asperiores veniam,<span
-                 class="moreText">test mollitia ullam nemo a voluptatum ex? Cumque dignissimos quidem, illo
-                 mollitia officia excepturi reiciendis soluta. Lorem ipsum dolor sit, amet consectetur
-                 adipisicing elit. Nulla praesentium quas, voluptatem dolor quod voluptas quidem voluptate
-                 omnis reprehenderit aspernatur laudantium officia, sapiente, tempore non! Aperiam dolores
-                 explicabo doloremque nobis itaque quas deserunt, enim quos quae odit similique dolor libero
-                 a illo, minima laboriosam earum at, vitae tempore sit consectetur?</span></p>
-         <button class="read-more-btn">Read More</button>
-     </div>
- </div>
-</section>
 
-    </main>
 
     <!-- footer  -->
     <footer class="footer">
@@ -423,7 +455,7 @@
         <p>&#169; 2021-2022 copyright all right reserved</p>
     </footer>
 
-    <script src="js/index.js"></script>
+    <script src="/js/index.js"></script>
 </body>
 
 </html>

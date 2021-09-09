@@ -39,6 +39,40 @@ $(document).ready(function() {
 
 
 
+//............................................................//
+
+// Pass value click to input tag
+
+function gstR(count){
+  document.getElementById('purpose').value=count;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // read more and read less button
 const readMoreBtn = document.querySelector('.read-more-btn');
 const text = document.querySelector('.text');
