@@ -478,7 +478,7 @@ nav{
 .container2 .contactform .formbox .inputbox textarea{
   height: 120px;
 }
-.container2 .contactform .formbox .inputbox span{
+/* .container2 .contactform .formbox .inputbox span{
   position: absolute;
   left: 0;
   padding: 5px 0;
@@ -497,7 +497,7 @@ nav{
   letter-spacing: 1px;
   color: #095a55;
   font-weight: 500;
-}
+} */
 .container2 .contactform .formbox .inputbox input[type="submit"]{
   position: relative;
   cursor: pointer;
@@ -647,6 +647,13 @@ nav{
     .second-half img{
       margin-top: 105px;
     }
+}
+
+
+
+.formerror{
+  font-weight: bold;
+  color: red;
 }
 
 

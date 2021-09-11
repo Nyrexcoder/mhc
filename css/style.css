@@ -27,8 +27,7 @@ nav{
   position: fixed;
   z-index: 99;
   width: 100%;
-  
-  background: #242526;
+  background: #0E2431;
 }
 nav .wrapper{
   position: relative;
@@ -105,7 +104,7 @@ nav .wrapper{
   visibility: hidden;
 }
 .mega-box .content{
-  background: #242526;
+  background: #0E2431;
   padding: 25px 20px;
   display: flex;
   width: 100%;
@@ -664,7 +663,7 @@ a{
 .container2 .contactform .formbox .inputbox textarea{
     height: 120px;
 }
-.container2 .contactform .formbox .inputbox span{
+/* .container2 .contactform .formbox .inputbox span{
     position: absolute;
     left: 0;
     padding: 5px 0;
@@ -683,6 +682,11 @@ a{
     letter-spacing: 1px;
     color: #095a55;
     font-weight: 500;
+} */
+
+.formerror{
+  font-weight: bold;
+  color: red;
 }
 .container2 .contactform .formbox .inputbox input[type="submit"]{
     position: relative;
@@ -1059,5 +1063,7 @@ a{
     }
 
 }
+
+
 
 
