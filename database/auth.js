@@ -45,7 +45,7 @@ loginForm.addEventListener('submit', (e) => {
 
   auth.signInWithEmailAndPassword(Uemail, Upassword).then(cred =>{
     alert("User login Successfully")
-    window.location.href="/client Page/logout.html"
+    window.location.href="/ClientPage/logout.html";
     loginForm.reset();
   })
 })
