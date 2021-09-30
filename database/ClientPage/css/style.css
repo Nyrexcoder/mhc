@@ -309,7 +309,7 @@ nav input{
 .fistsection{
     display: flex;
     height: 100vh;
-    background:rgba(0, 0, 0, 0.2) url(https://images.unsplash.com/photo-1522881193457-37ae97c905bf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80);
+    background:rgba(0, 0, 0, 0.2) url(https://images.unsplash.com/photo-1563461660947-507ef49e9c47?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80);
     background-size: cover;
     background-blend-mode: darken;
 }
