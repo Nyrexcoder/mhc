@@ -771,7 +771,6 @@ a{
 .bx-menu{
     font-size: 15px;
 }
-#more {display: none;}
 /* footer social icons */
 .footer__social{
     margin-bottom: var(--mb-4);
