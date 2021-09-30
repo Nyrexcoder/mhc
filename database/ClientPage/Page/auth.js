@@ -12,6 +12,7 @@ sign_in_btn.addEventListener("click", () => {
 
 // signUp form
 
+
 const signupForm = document.querySelector('#signup-form');
 signupForm.addEventListener('submit', (e) =>{
   e.preventDefault();
