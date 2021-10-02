@@ -67,7 +67,7 @@
                     </div>
                   </div>
                 </li>
-                <li><a href="Login&SignUp.html">LogIn</a></li>
+                <li><a href="database/auth.html">LogIn</a></li>
               </ul>
               <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
             </div>
@@ -80,7 +80,7 @@
               <div class="first-half">
                   <p class="text-big">GST Registration/Return <font color="#06A621">*  ₹ 1999/-</font></p>
                   <div class="button">
-                    <a href="#contact"><input class="gst-return-btn" type="button" onclick="gstR('GST Registration')" value="Apply"/></a>
+                    <a href="database/auth.html"><input class="gst-return-btn" type="button" onclick="gstR('GST Registration')" value="Apply"/></a>
                  </div>
               </div>
               <div class="second-half">
@@ -156,13 +156,13 @@ Following categories of persons shall be required to be registered compulsorily 
       </div>
       <div class="column">
         <form action="https://formspree.io/f/xayakqog" method="POST">
-          <label for="lname">Purpose</label>
+          <label for="lname">Purpose <font color="red">*</font></label>
           <input type="text" name="Purpose" id="purpose" placeholder="Purpose" required>
-          <label for="fname">Name</label>
+          <label for="fname">Name <font color="red">*</font></label>
           <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
-          <label for="lname">Phone</label>
+          <label for="lname">Phone <font color="red">*</font></label>
           <input type="text" id="phone" name="Phone Number" placeholder="Your Phone number.."read-more>
-          <label for="lname">Email</label>
+          <label for="lname">Email <font color="red">*</font></label>
           <input type="text" id="email" name="Email" placeholder="Your email.." required>
           <input type="submit" value="Submit">
         </form>
