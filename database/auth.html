@@ -7,6 +7,7 @@
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="auth.css" />
     <title>Sign in & Sign up Form</title>
   </head>
@@ -18,7 +19,7 @@
             <h2 class="title">Log in</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" id="Uemail" required />
+              <input type="text" placeholder="UserEmail" id="Uemail" required />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
@@ -28,7 +29,7 @@
               </span>
             </div>
             <p id="forgot-password" class="forget">Forgot Password</p>
-            <input type="submit" value="Login" class="btn solid" id="logIn"/>
+            <input onclick="login()" type="submit" value="Login" class="btn solid" id="logIn"/>
             <p class="social-text">Or Sign in with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">
@@ -37,11 +38,8 @@
               <a href="#" class="social-icon">
                 <i class="fab fa-twitter"></i>
               </a>
-              <a href="#" class="social-icon">
+              <a class="social-icon" onclick="loginWithGoogle()">
                 <i class="fab fa-google"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
               </a>
             </div>
           </form>
@@ -58,8 +56,15 @@
             <div class="input-field">
               <i class="fas fa-lock"></i>
               <input type="password" placeholder="Password" id="password" required/>
+              <!-- <span class="field-eye">
+                <i class="fa fa-eye" aria-hidden="true" id="S-eye"></i>
+              </span> -->
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="confirm Password" id="password2" required/>
               <span class="field-eye">
-                <i class="fa fa-eye" aria-hidden="true" id="S-eye" onclick="toggle()"></i>
+                <i class="fa fa-eye" aria-hidden="true" id="S-eye" onclick="toggle2()"></i>
               </span>
             </div>
             <input type="submit" class="btn" value="Sign up" id="signUp"/>
@@ -73,9 +78,6 @@
               </a>
               <a href="#" class="social-icon">
                 <i class="fab fa-google"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
               </a>
             </div>
           </form>
@@ -131,10 +133,10 @@
   appId: "1:287565894316:web:810c18a9c4c21abf7b4509"
 };
     // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
+   const app =firebase.initializeApp(firebaseConfig);
 
     const auth = firebase.auth();
-    const db = firebase.firebase.firestore();
+    const database = getDatabase(app)
 
     // update firestore Setting
     db.settings({timestampsInSnapshots:true});
