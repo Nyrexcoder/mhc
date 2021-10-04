@@ -309,10 +309,14 @@ nav input{
 .fistsection{
     display: flex;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.7) url(https://images.unsplash.com/photo-1565373679580-fc0cb538f49c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+ 
     background-size: cover;
     background-blend-mode: darken;
 }
+#image{
+  background: rgba(0, 0, 0, 0.9);
+}
+
 .box-main{
     height: 100%;
     display: flex;

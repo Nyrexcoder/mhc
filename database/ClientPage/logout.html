@@ -8,6 +8,7 @@
     <title>M H Consultants</title>
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/jarallax.css">
 
     <link rel="icon" type="image/png" sizes="96x96" href="../fab/android-icon-192x192.png">
 
@@ -109,6 +110,8 @@
   <section>
     <main class="l-main">
         <section class="fistsection" id="home">
+            <div class="image-box jarallax">
+                <img class="jarallax-img" id="image" src="https://images.unsplash.com/photo-1563461660947-507ef49e9c47?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80" alt="Home-Image">
             <div class="box-main">
                 <div class="first-half">
                     <p class="text-big">Welcome to M H Consultants</p>
@@ -122,6 +125,7 @@
                     <img src="images/home-icon.png" alt="home-image">
                 </div>
             </div>
+        </div>
   </section>
   
 
@@ -460,6 +464,13 @@
     </footer>
 
     <script src="js/index.js"></script>
+    <script src="js/jarallax-element.js"></script>
+    <script src="js/jarallax.js"></script>
+    <script type="text/javascript">
+        jarallax(document.querySelectorAll('.jarallax'), {
+    speed: 0.2
+});
+    </script>
     <!-- <script src="js/logout.js"></script> -->
 </body>
 
