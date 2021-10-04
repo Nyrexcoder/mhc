@@ -1,3 +1,11 @@
+// page preloder code
+const preloder = document.getElementById('loding')
+function pageLoding(){
+  preloder.style.display='none';
+}
+
+
+
 /*===== MENU SHOW =====*/ 
 const showMenu = (toggleId, navId) =>{
   const toggle = document.getElementById(toggleId),

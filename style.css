@@ -8,6 +8,15 @@
   text-decoration: none;
 }
 
+#loding{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background:#fff url('images/1494.gif')
+  no-repeat center;
+  z-index: 999;
+}
+
 /*===== BASE =====*/
 *,::before,::after{
   box-sizing: border-box;

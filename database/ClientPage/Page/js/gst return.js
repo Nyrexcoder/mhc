@@ -1,3 +1,11 @@
+// page preloder code
+const preloder = document.getElementById('loding')
+function pageLoding(){
+  preloder.style.display='none';
+}
+
+
+
 function gstR(count){
     document.getElementById('purpose').value=count;
   }
