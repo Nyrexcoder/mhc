@@ -65,8 +65,14 @@ function login(){
     auth.signInWithEmailAndPassword(Uemail, Upassword).then(cred =>{
       swal("Success", "You are login Successfully", "success");
       alert("User login Successfully")
-      window.location.href="ClientPage/logout.html";
+      // location.replace.href="";
+      window.location.replace('../logout.html');
       loginForm.reset();
+      window.history.forward();
+      function noBack()
+      {
+          window.history.forward();
+      }
     }).catch(function(error){
       swal("Something went wrong!", "You have not login please Re-cheack email and password!", "error");
       // alert("You have not login please Re-cheack email and password!")
@@ -98,7 +104,28 @@ logout.addEventListener('click', (e) => {
   });
 });
 
+// Forget password
+document
+.querySelector("#forgot-password")
+.addEventListener("click", () => {
+    const email = document.querySelector("#login-email").value;
+    if (email.trim() == "") {
+    alert("Enter Email");
+    } else {
+    forgotPassword(email);
+    }
+});
 
+const forgotPassword = (email) => {
+auth
+    .sendPasswordResetEmail(email)
+    .then(function () {
+    alert("email sent");
+    })
+    .catch(function (error) {
+    alert("invalid email or bad network connection");
+    });
+};
 //signup eye
 var state = false;
 function toggle2(){
