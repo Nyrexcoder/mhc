@@ -10,16 +10,16 @@ function gstR(count){
 
 
   // confirm box
-const send = document.querySelector('.send');
+// const send = document.querySelector('.send');
 
-send.addEventListener('click', (e)=>{
-  if (confirm("Are you sure to submit your form ?") == true) {
-    userPreference = "form succesfully submited";
-} else {
-  alert("form not submit !");
-  e.preventDefault(); 
-}
-});
+// send.addEventListener('click', (e)=>{
+//   if (confirm("Are you sure to submit your form ?") == true) {
+//     userPreference = "form succesfully submited";
+// } else {
+//   alert("form not submit !");
+//   e.preventDefault(); 
+// }
+// });
 
 
   // contact form validation
@@ -80,14 +80,12 @@ send.addEventListener('click', (e)=>{
       moreText.style.display = "inline";
     }
   }
-// after login search code
-function openPage(){
+  
+ // Before login search code
+ function openPage(){
   var x = document.getElementById('search').value;
   if(x === "gst"){
     window.open("gstRegistration.html" ,"_parent");
-  }
-  else if(x === "home"){
-    window.open("index.html" ,"_parent");
   }
   else if(x === "gst registration"){
     window.open("gstRegistration.html" ,"_parent");

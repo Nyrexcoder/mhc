@@ -18,6 +18,24 @@ body,
 input {
   font-family: "Poppins", sans-serif;
 }
+.logo{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 48px;
+  align-items: center;
+  font-size: 15px;
+  color: #000;
+}
+.home-logo{
+  position: relative;
+  margin: auto;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  text-decoration: none;
+  font-size: 45px;
+  color: #000;
+}
 
 .container {
   position: relative;

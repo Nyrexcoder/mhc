@@ -50,3 +50,76 @@ send.addEventListener('click', (e)=>{
   
   }
   
+  // after login search code
+  function openPage(){
+    var x = document.getElementById('search').value;
+    if(x === "gst"){
+      window.open("gstRegistration.html" ,"_parent");
+    }
+    else if(x === "gst registration"){
+      window.open("gstRegistration.html" ,"_parent");
+    }
+    else if(x === "itr"){
+      window.open("Return income Tax Filling.html" ,"_parent");
+    }
+    else if(x === "income tax"){
+      window.open("Return income Tax Filling.html" ,"_parent");
+    }
+    else if(x === "income tax return"){
+      window.open("Return income Tax Filling.html" ,"_parent");
+    }
+    else if(x === "company registration"){
+      window.open("database/auth.html");
+    }
+    else if(x === "company"){
+      window.open("database/auth.html");
+    }
+    else if(x === "book keeping"){
+      window.open("database/auth.html");
+    }
+    else if(x === "digital signature"){
+      window.open("database/auth.html");
+    }
+    else if(x === "financial advisory"){
+      window.open("database/auth.html");
+    }
+    else if(x === "fssai"){
+      window.open("database/auth.html");
+    }
+    else if(x === "FSSAI"){
+      window.open("database/auth.html");
+    }
+    else if(x === "insurance advisory"){
+      window.open("database/auth.html");
+    }
+    else if(x === "iso"){
+      window.open("database/auth.html");
+    }
+    else if(x === "legal drafting"){
+      window.open("database/auth.html");
+    }
+    else if(x === "msme"){
+      window.open("database/auth.html");
+    }
+    else if(x === "pan"){
+      window.open("database/auth.html");
+    }
+    else if(x === "PAN"){
+      window.open("database/auth.html");
+    }
+    else if(x === "ROC Filling"){
+      window.open("database/auth.html");
+    }
+    else if(x === "roc filling"){
+      window.open("database/auth.html");
+    }
+    else if(x === "TAN"){
+      window.open("database/auth.html");
+    }
+    else if(x === "tan"){
+      window.open("database/auth.html");
+    }
+    else{
+      alert("Page Not Found");
+    }
+  }

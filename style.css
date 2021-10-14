@@ -40,8 +40,12 @@ body{
   color: #000;
 }
 .home-logo{
+  position: relative;
+  margin: auto;
+  margin-top: -20px;
+  margin-bottom: -20px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 45px;
   color: #000;
 }
 /* navbar code start */
@@ -101,6 +105,10 @@ body{
   background: white;
 height: 60px;
 margin-top: -7px;
+}
+
+.jarallax{
+  margin-top: -7px;
 }
 
 /* main body code */

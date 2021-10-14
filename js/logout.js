@@ -158,73 +158,73 @@ $(document).ready(function() {
  function openPage(){
   var x = document.getElementById('search').value;
   if(x === "gst"){
-    window.open("gstRegistration.html" ,"_parent");
-  }
-  else if(x === "home"){
-    window.open("index.html" ,"_parent");
+    window.open("gstRegistration&Return.html" ,"_parent");
   }
   else if(x === "gst registration"){
-    window.open("gstRegistration.html" ,"_parent");
+    window.open("gstRegistration&Return.html" ,"_parent");
+  }
+  else if(x === "home"){
+    window.open("logout.html" ,"_parent");
   }
   else if(x === "itr"){
-    window.open("Return income Tax Filling.html" ,"_parent");
+    window.open("Income Tax Return.html" ,"_parent");
   }
   else if(x === "income tax"){
-    window.open("Return income Tax Filling.html" ,"_parent");
+    window.open("Income Tax Return.html" ,"_parent");
   }
   else if(x === "income tax return"){
-    window.open("Return income Tax Filling.html" ,"_parent");
+    window.open("Income Tax Return.html" ,"_parent");
   }
   else if(x === "company registration"){
-    window.open("B.L Company Registration.html" ,"_parent");
+    window.open("Company Registration.html" ,"_parent");
   }
   else if(x === "company"){
-    window.open("B.L Company Registration.html" ,"_parent");
+    window.open("Company Registration.html" ,"_parent");
   }
   else if(x === "book keeping"){
-    window.open("B.L Book Keeping.html" ,"_parent");
+    window.open("Book Keeping.html" ,"_parent");
   }
   else if(x === "digital signature"){
-    window.open("B.L Digital Signature.html" ,"_parent");
+    window.open("Digital Signature.html" ,"_parent");
   }
   else if(x === "financial advisory"){
-    window.open("B.L Financial Advisory.html" ,"_parent");
+    window.open("Financial Advisory.html" ,"_parent");
   }
   else if(x === "fssai"){
-    window.open("B.L FSSAI.html" ,"_parent");
+    window.open("FSSAI.html" ,"_parent");
   }
   else if(x === "FSSAI"){
-    window.open("B.L FSSAI.html" ,"_parent");
+    window.open("FSSAI.html" ,"_parent");
   }
   else if(x === "insurance advisory"){
-    window.open("B.L Insurance Advisory.html" ,"_parent");
+    window.open("Insurance Advisory.html" ,"_parent");
   }
   else if(x === "iso"){
-    window.open("B.L ISO.html" ,"_parent");
+    window.open("ISO.html" ,"_parent");
   }
   else if(x === "legal drafting"){
-    window.open("B.L Legal Drafting.html" ,"_parent");
+    window.open("Legal Drafting.html" ,"_parent");
   }
   else if(x === "msme"){
-    window.open("B.L MSME Registration.html" ,"_parent");
+    window.open("MSME.html" ,"_parent");
   }
   else if(x === "pan"){
-    window.open("B.L PAN.html" ,"_parent");
+    window.open("PAN.html" ,"_parent");
   }
   else if(x === "PAN"){
-    window.open("B.L PAN.html" ,"_parent");
+    window.open("PAN.html" ,"_parent");
   }
   else if(x === "ROC Filling"){
-    window.open("B.L ROC.html" ,"_parent");
+    window.open("ROC.html" ,"_parent");
   }
   else if(x === "roc filling"){
-    window.open("B.L ROC.html" ,"_parent");
+    window.open("ROC.html" ,"_parent");
   }
   else if(x === "TAN"){
-    window.open("B.L TAN.html" ,"_parent");
+    window.open("TAN.html" ,"_parent");
   }
   else if(x === "tan"){
-    window.open("B.L TAN.html" ,"_parent");
+    window.open("TAN.html" ,"_parent");
   }
   else{
     alert("Page Not Found");
