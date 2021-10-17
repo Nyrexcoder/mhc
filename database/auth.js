@@ -31,16 +31,12 @@ signupForm.addEventListener('submit', (e) =>{
 if(password==cpass){
   auth.createUserWithEmailAndPassword(email, password).then(cred => {
     alert("signUp Successfully");
-    // const id = firebase.auth().currentUser.uid;
-    // firebase.database().ref('Users/'+id).set({
-    //   name:name,
-    //   email:email,
-    // });
     location.reload();
     signupForm.reset();
 
   }).catch(function(error){
-    swal("Something went wrong!", "You have not Registerd please Re-cheack email and password!", "error");
+    alert(error);
+    // swal("Something went wrong!", error, "error");
     // alert("You have not login please Re-cheack email and password!")
     const errorcode = error.code;
     const errormsg = error.message;
@@ -83,15 +79,31 @@ function login(){
 
 }
 // Login with google funciton
-async function loginWithGoogle(){
-  try{
-    var provider = new firebase.auth.GoogleAuthProvider();
-    await firebase.auth()
-    .signInWithPopup(provider)
-    alert(result)
-  }catch(error){
-    alert(error);
-  }
+function goolelog(){
+  var provider = new firebase.auth.GoogleAuthProvider();
+
+  firebase.auth()
+  .signInWithPopup(provider)
+  .then((result) => {
+    window.location.href="/logout.html";
+    /** @type {firebase.auth.OAuthCredential} */
+    var credential = result.credential;
+    // This gives you a Google Access Token. You can use it to access the Google API.
+    var token = credential.accessToken;
+    // The signed-in user info.
+    var user = result.user;
+    // ...
+  }).catch((error) => {
+    alert(error)
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // The email of the user's account used.
+    var email = error.email;
+    // The firebase.auth.AuthCredential type that was used.
+    var credential = error.credential;
+    // ...
+  });
 }
 
 
@@ -105,27 +117,27 @@ logout.addEventListener('click', (e) => {
 });
 
 // Forget password
-document
-.querySelector("#forgot-password")
-.addEventListener("click", () => {
-    const email = document.querySelector("#login-email").value;
-    if (email.trim() == "") {
-    alert("Enter Email");
-    } else {
-    forgotPassword(email);
-    }
-});
+function myFunction(){
+  const email = document.getElementById('Uemail').value;
+if(email != ""){
+  auth.sendPasswordResetEmail(email)
+  .then(() => {
+    alert("Please cheack your email Password reset email sent!")
+    // Password reset email sent!
+    // ..
+  })
+  .catch((error) => {
+    swal(error)
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // ..
+  });
+}
+else{
+  swal("Something went wrong!", "Please fill the email first!", "error");
+}
+}
 
-const forgotPassword = (email) => {
-auth
-    .sendPasswordResetEmail(email)
-    .then(function () {
-    alert("email sent");
-    })
-    .catch(function (error) {
-    alert("invalid email or bad network connection");
-    });
-};
 //signup eye
 var state = false;
 function toggle2(){

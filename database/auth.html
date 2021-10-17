@@ -26,23 +26,20 @@
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" id="Upassword" required/>
+              <input type="password" placeholder="Password" id="Upassword"/>
               <span class="field-eye">
                 <i class="fa fa-eye" aria-hidden="true" id="eye" onclick="toggle()"></i>
               </span>
             </div>
-            <p id="forgot-password">Forgot Password</p>
+            <p id="forgot-password" onclick="myFunction()"><font color="red"><b> Forgot Passwor?</b></font></p>
             <input onclick="login()" type="submit" value="Login" class="btn solid" id="logIn"/>
             <p class="social-text">Or Sign in with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">
                 <i class="fab fa-facebook-f"></i>
               </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a class="social-icon" onclick="loginWithGoogle()">
-                <i class="fab fa-google"></i>
+              <a class="social-icon">
+                <i class="fab fa-google" onclick="goolelog()"></i>
               </a>
             </div>
           </form>
@@ -77,10 +74,7 @@
                 <i class="fab fa-facebook-f"></i>
               </a>
               <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-google"></i>
+                <i class="fab fa-google" onclick="goolelog()"></i>
               </a>
             </div>
           </form>
@@ -121,28 +115,29 @@
 <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use-->
-<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-database.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
 
 <script>
     // Your web app's Firebase configuration
-    const firebaseConfig = {
-  apiKey: "AIzaSyDV6sN3kQhxzmG3qTK8lXq0iHTX9RpbvDQ",
-  authDomain: "nyrexcoding-78f9b.firebaseapp.com",
-  projectId: "nyrexcoding-78f9b",
-  storageBucket: "nyrexcoding-78f9b.appspot.com",
-  messagingSenderId: "287565894316",
-  appId: "1:287565894316:web:810c18a9c4c21abf7b4509"
+      const firebaseConfig = {
+  apiKey: "AIzaSyCG5EO76-lNirWxG-_pZghKVfKA_NyRPiU",
+  authDomain: "auth-d762b.firebaseapp.com",
+  databaseURL: "https://auth-d762b-default-rtdb.firebaseio.com",
+  projectId: "auth-d762b",
+  storageBucket: "auth-d762b.appspot.com",
+  messagingSenderId: "525771482750",
+  appId: "1:525771482750:web:f516faad9106926b6f9a2f"
 };
     // Initialize Firebase
    const app =firebase.initializeApp(firebaseConfig);
 
     const auth = firebase.auth();
-    const database = getDatabase(app)
+    // const database = getDatabase(app)
 
     // update firestore Setting
-    db.settings({timestampsInSnapshots:true});
+    // db.settings({timestampsInSnapshots:true});
 </script>
 
     <script src="auth.js"></script>
