@@ -240,7 +240,39 @@ html{
   color: red;
 }
 
-/* Contact form */
+@media screen and (min-width:360px) and (max-width:640px) {
+  .home-logo{
+    font-size: 25px;
+    position: absolute;
+    top: 16px;
+    right: 69px;
+  }
+}
+
+@media screen and (min-width:411px) and (max-width:731px){
+
+  .home-logo{
+    font-size: 25px;
+    position: absolute;
+    top: 16px;
+    right:98px;
+  }
+}
+
+/* @media screen and (min-width:411px) and (max-width:823px){
+  .box-main {
+    margin-top: -150px;
+  } 
+} */
+
+@media screen and (min-width:320px) and (max-width:568px){
+  .home-logo{
+    margin-top: -20px;
+    margin-bottom: -10px;
+    font-size: 25px;
+    color: #000;
+  }
+}
 
 
 

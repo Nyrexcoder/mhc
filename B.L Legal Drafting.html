@@ -13,12 +13,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
 </head>
+<style>
+ 
+  .g-3{
+    font-size: 16px;
+  }
+  @media screen and (max-width:280px){
+    .g-3{
+      font-size: 11px;
+    }
+    /* .home-logo{
+      font-size: 21px 
+    } */
+  }
+    @media screen and (max-width:990px){
+      .btn{
+        display: none;
+      }
+      marquee{
+        display: none;
+      }
+  }
+</style>
 <body onload="pageLoding()">
   <div id="loding">
   </div>
   <div class="logo">
     <span class="home-logo"><b><font color="#FF5733"> M H </font>Consultants</b><br></span>
-      <b> <i class="fas fa-phone"></i> +918383930805</b>
+    <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      Info
+    </button>
+    <ul class="dropdown-menu" style="z-index: 9999999;">
+      <li><a class="dropdown-item" href=""><i class="fas fa-phone"></i><b>Mobile </b>+91 8383930805</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="https://goo.gl/maps/9yjSb898yzdnwFv86"><i class="fa fa-map-marker" aria-hidden="true"></i><b>Address</b><br><address>
+        Rahua, near bela mode, pusa road, muazaffarpur, Bihar - 842002
+      </address></a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">More <i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+    </ul>
+  
+        </div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top navcolor">
       <div class="container-fluid">
@@ -27,9 +62,9 @@
         </button>
             <div class="collapse navbar-collapse nav-li" id="main_nav">
               <ul class="navbar-nav">
-                <li class="nav-item active"> <a class="nav-link active" href="index.html">Home </a> </li>
-                <li class="nav-item"><a class="nav-link active" href="index.html#about"> About </a></li>
-                <li class="nav-item"><a class="nav-link active" href="index.html#contact"> Contact Us</a></li>
+                <a class="nav-link active" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="index.html#about"><i class="fa fa-info-circle" aria-hidden="true"></i>About</a></li>
+                <li class="nav-item"><a class="nav-link active" href="index.html#contact"><i class="fa fa-fw fa-envelope"></i>Contact Us</a></li>
                 <li class="nav-item dropdown has-megamenu">
                   <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown"> Services  </a>
                   <div class="dropdown-menu megamenu" role="menu">
@@ -54,6 +89,7 @@
                             <li><a href="B.L MSME Registration.html">MSME Registration</a></li>
                             <li><a href="B.L Financial Advisory.html">Financial Advisory</a></li>
                             <li><a href="B.L Insurance Advisory.html">Insurance Advisory</a></li>
+                            <li><a href="database/auth.html">Pollutin & Other Licensing</a></li>
                           </ul>
                         </div>  <!-- col-megamenu.// -->
                       </div><!-- end col-3 -->
@@ -72,13 +108,9 @@
                     </div><!-- end row --> 
                   </div> <!-- dropdown-mega-menu.// -->
                 </li>
-                <li class="nav-item"><a class="nav-link active" href="database/auth.html"> Login/SignUp</a></li>
+                <li class="nav-item"><a class="nav-link active" href="database/auth.html"><i class="fa fa-fw fa-user"></i>Login/SignUp</a></li>
               </ul>
               <ul class="navbar-nav ms-auto">
-                <form class="d-flex">
-                  <input id="search" onchange="openPage()" class="form-control me-2" type="search" placeholder="Type to search..." aria-label="Search">
-                  <button class="btn btn-light " type="submit">Search</button>
-                </form>
                 </li>
               </ul>
             </div> <!-- navbar-collapse.// -->

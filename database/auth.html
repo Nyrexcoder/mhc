@@ -1,116 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/64d58efce2.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <link rel="stylesheet" href="auth.css" />
-    <title>Sign in & Sign up Form</title>
-  </head>
-
-<body onload="pageLoding()">
-    <div id="loding"> 
-    </div>
-    <div class="container">
-      <div class="forms-container">
-        <div class="signin-signup">
-          <form action="#" class="sign-in-form" id="login-form">
-            <h2 class="title">Log in</h2>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="UserEmail" id="Uemail" required />
-            </div>
-            <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" id="Upassword"/>
-              <span class="field-eye">
-                <i class="fa fa-eye" aria-hidden="true" id="eye" onclick="toggle()"></i>
-              </span>
-            </div>
-            <p id="forgot-password" onclick="myFunction()"><font color="red"><b> Forgot Passwor?</b></font></p>
-            <input onclick="login()" type="submit" value="Login" class="btn solid" id="logIn"/>
-            <p class="social-text">Or Sign in with social platforms</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f" onclick="facbooklog()"></i>
-              </a>
-              <a class="social-icon">
-                <i class="fab fa-google" onclick="goolelog()"></i>
-              </a>
-            </div>
-          </form>
-          <form action="#" class="sign-up-form" id="signup-form">
-            <h2 class="title">Sign up</h2>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" id="name" required/>
-            </div>
-            <div class="input-field">
-              <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" id="email" required/>
-            </div>
-            <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" id="password" required/>
-              <!-- <span class="field-eye">
-                <i class="fa fa-eye" aria-hidden="true" id="S-eye"></i>
-              </span> -->
-            </div>
-            <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="password" placeholder="confirm Password" id="password2" required/>
-              <span class="field-eye">
-                <i class="fa fa-eye" aria-hidden="true" id="S-eye" onclick="toggle2()"></i>
-              </span>
-            </div>
-            <input type="submit" class="btn" value="Sign up" id="signUp"/>
-            <p class="social-text">Or Sign up with social platforms</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-google" onclick="goolelog()"></i>
-              </a>
-            </div>
-          </form>
-        </div>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Login & Register</title>
+      <link rel="stylesheet" href="register.css">
+      <link rel="stylesheet" href="auth.css">
+       <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <style>
+      form i {
+    margin-left: -30px;
+    cursor: pointer;
+}
+   </style>
+   <body onclick="Loding()" onload="pageLoding()">
+      <div id="pageLoding">
+      </div>
+      <div id="loding"> 
       </div>
 
-      <div class="panels-container">
-        <div class="panel left-panel">
-          <div class="content">
-            <h3>New here ?</h3>
-            <p>
-              If you are new here then click here to SignUp and take advantage of our services.
-            </p>
-            <button class="btn transparent" id="sign-up-btn">
-              Sign Up
-            </button>
-          </div>
-          <img src="log.svg" class="image" alt="" />
-        </div>
-        <div class="panel right-panel">
-          <div class="content">
-            <h3>One of us ?</h3>
-            <p>
-              If you already create account then click and LogIn.
-            </p>
-            <button class="btn transparent" id="sign-in-btn">
-              Log In
-            </button>
-          </div>
-          <img src="register.svg" class="image" alt="" />
-        </div>
-      </div>
-    </div>
+      <div id="alert" class="alert alert-danger alert-dismissible fade show d-none" role="alert" style="z-index: 9999; position: fixed; top: 0px;">
+         <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+       </div>
 
+      <div class="wrapper">
+         <i class="fa fa-arrow-left" style="font-size: 20px; cursor: pointer;" onclick="goBack()" aria-hidden="true"></i>
+         <div class="title-text">
+            <div class="title login">
+               Login
+            </div>
+            <div class="title signup">
+               Signup
+            </div>
+         </div>
+         <div class="form-container">
+            <div class="slide-controls">
+               <input type="radio" name="slide" id="login" checked>
+               <input type="radio" name="slide" id="signup">
+               <label for="login" class="slide login">Login</label>
+               <label for="signup" class="slide signup">Signup</label>
+               <div class="slider-tab"></div>
+            </div>
+            <div class="form-inner">
+               <form class="login" id="login-form">
+                  <div class="field">
+                     <input type="text" id="Uemail" placeholder="Email Address">
+                  </div>
+                  <div class="field">
+                     <input type="password" id="Upassword" placeholder="Password">
+                     <i class="bi bi-eye-slash" id="togglePassword"></i>
+                  </div>
+                  <div class="pass-link">
+                     <a href="#" onclick="forgetPassword()">Forgot password?</a>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" id="login-btn" onclick="login()" value="Login">
+                  </div>
+                  <p>Or Login in with social platforms</p>
+                  <div class="google-icon">
+                     <img src="search.png" onclick="goolelog()" alt="goole login">
+                  </div>
+                  <div class="signup-link">
+                     Not a member? <a href="">Signup now</a>
+                  </div>
+               </form>
+               <form action="#" class="signup" id="signup-form">
+                  <div class="field">
+                     <input type="text" id="name" placeholder="Name" required>
+                  </div>
+                  <div class="field">
+                     <input type="email" id="email" placeholder="Email Address" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" id="password" placeholder="Password" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" id="ConfirmPassword" placeholder="Confirm password" required>
+                     <i class="bi bi-eye-slash" id="togglec-Password"></i>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" value="Signup">
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>     
+      <!-- Optional JavaScript; choose one of the two! -->
+  
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+      <!-- Option 2: Separate Popper and Bootstrap JS -->
+      
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
+  
+      <script type="text/javascript">
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+      </script> 
+      <script>
+         const loginText = document.querySelector(".title-text .login");
+         const loginForm = document.querySelector("form.login");
+         const loginBtn = document.querySelector("label.login");
+         const signupBtn = document.querySelector("label.signup");
+         const signupLink = document.querySelector("form .signup-link a");
+         signupBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "-50%";
+           loginText.style.marginLeft = "-50%";
+         });
+         loginBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "0%";
+           loginText.style.marginLeft = "0%";
+         });
+         signupLink.onclick = (()=>{
+           signupBtn.click();
+           return false;
+         });
+      </script>
+<!-- Back button function -->
+      <script>
+         function goBack() {
+           window.history.back();
+         }
+         </script>
 
-        
+         <!-- password show and hide function -->\
+         <script>
+            function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+         </script>
+<!-- Login eye function -->
+         <script>
+            const togglePassword = document.querySelector('#togglePassword');
+            const password = document.querySelector('#Upassword');
+
+            togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye / eye slash icon
+    this.classList.toggle('bi-eye');
+});
+         </script>
+
+   <!-- Signup eye function -->
+<script>
+   const togglePassword2 = document.querySelector('#togglec-Password');
+const password2 = document.querySelector('#ConfirmPassword');
+
+togglePassword2.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password2.getAttribute('type') === 'password' ? 'text' : 'password';
+    password2.setAttribute('type', type);
+    // toggle the eye / eye slash icon
+    this.classList.toggle('bi-eye');
+});
+</script>
+
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
 
@@ -119,28 +183,23 @@
 <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-database.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
 
+<!-- Integration of firebase databse -->
 <script>
-    // Your web app's Firebase configuration
-      const firebaseConfig = {
-  apiKey: "AIzaSyCG5EO76-lNirWxG-_pZghKVfKA_NyRPiU",
-  authDomain: "auth-d762b.firebaseapp.com",
-  databaseURL: "https://auth-d762b-default-rtdb.firebaseio.com",
-  projectId: "auth-d762b",
-  storageBucket: "auth-d762b.appspot.com",
-  messagingSenderId: "525771482750",
-  appId: "1:525771482750:web:f516faad9106926b6f9a2f"
+const firebaseConfig = {
+apiKey: "AIzaSyDvK8sb4nu8WnaC3hOHgtTxD-smazx2zj4",
+authDomain: "m-h-consultants.firebaseapp.com",
+projectId: "m-h-consultants",
+storageBucket: "m-h-consultants.appspot.com",
+messagingSenderId: "209945457325",
+appId: "1:209945457325:web:6d5ee3e51b4112f3ad4c24"
 };
-    // Initialize Firebase
-   const app =firebase.initializeApp(firebaseConfig);
+// Initialize Firebase
+// Initialize Firebase
+const app =firebase.initializeApp(firebaseConfig);
+// var database = firebase.database();
+const auth = firebase.auth();
 
-    const auth = firebase.auth();
-    // const database = getDatabase(app)
-
-    // update firestore Setting
-    // db.settings({timestampsInSnapshots:true});
 </script>
-
-    <script src="auth.js"></script>
-
-  </body>
+<script src="auth.js"></script>
+   </body>
 </html>

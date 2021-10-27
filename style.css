@@ -251,6 +251,7 @@ a{
 	flex-direction: column;
 }
 .type a{
+  text-decoration: none;
 	color:#222222;
 	margin: 5px 0px;
 	font-weight: 700;
@@ -261,6 +262,7 @@ a{
 	color:rgba(26,26,26,0.5);
 }
 .price{
+  text-decoration: none;
 	color: #333333;
 	font-weight: 600;
 	font-size: 1.1rem;
@@ -294,6 +296,7 @@ a{
 	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
 }
 .buy-btn:hover{
+  text-decoration: none;
 	color:#FFFFFF;
 	background-color: #f15fa3;
 	transition: all ease 0.3s;
@@ -400,6 +403,7 @@ a{
     padding: 10px 0 0;
     text-align: justify;
 }
+#more {display: none;}
 
 .moreText{
     display: none;
@@ -644,30 +648,7 @@ a{
   } 
 }
 
-/* home animation */
-/* notice text animation */
 
-/* .marquee{
-  height: 50%;
-  width: 100%;
-  background-color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  white-space: nowrap;
-  overflow: hidden;
-}
 
-.marquee div{
-  color: red;
-  font-size: 3rem;
-  font-family: poppins;
-  animation: animate 15s linear infinite;
-  padding-left: 100%;
-  display: inline-block;
-} 
 
-@keyframes animate{
-  100%{
-      transform: translate(-100%, 0);
-  }
-} */
 
