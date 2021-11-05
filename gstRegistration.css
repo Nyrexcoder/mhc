@@ -14,7 +14,7 @@
   height: 100vh;
   background:#fff url('images/1494.gif')
   no-repeat center;
-  z-index: 999;
+  z-index: 99999;
 }
 
 html{

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M H Consultants</title>
+    <title>M H Consultants:Home</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="jarallax.css">
@@ -31,7 +31,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -73,10 +73,20 @@
         display: none;
       }
   }
+  .whatsapp-icon{
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  z-index: 999;
+}
 </style>
 <body onload="pageLoding()">
-    <div id="loding">
-    </div>
+  <div id="loding">
+  </div>
+   <!-- whatsapp icon click to chat purpose -->
+   <div class="whatsapp-icon">
+    <a href="https://wa.me/918383930805" target="_blank"><img src="images/whatsapp icon.png" style="width: 50px;" class="whatsapp-icon-btn" alt="click to chat with whatsapp"></a>
+  </div>
     
     <div id="myModal" class="modal fade animate__animated animate__bounce animate__delay-1s	1s">
 <div class="modal-dialog modal-dialog-centered">
@@ -96,9 +106,9 @@
     <div class="logo">
       <span class="home-logo"><b><font color="#FF5733"> M H </font>Consultants</b><br></span>
         <!-- Example single danger button -->
-  <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-    Info
-  </button>
+        <button type="button" class="btn btn-info dropdown-toggle info-btn" data-bs-toggle="dropdown" aria-expanded="false" style="background:#FF5733; color: white;">
+          More information
+        </button>
   <ul class="dropdown-menu" style="z-index: 9999999;">
     <li><a class="dropdown-item" href="#"><i class="fas fa-phone"></i><b>Mobile </b> +91 8383930805</a></li>
     <li><hr class="dropdown-divider"></li>
@@ -106,7 +116,7 @@
       Rahua, near bela mode, pusa road, muazaffarpur, Bihar - 842002
     </address></a></li>
     <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="#">More <i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+    <li><a class="dropdown-item" href="https://wa.me/918383930805" target="_blank"><i class="fab fa-whatsapp"></i> Click to chat <i class="fas fa-long-arrow-alt-right"></i> </a></li>
   </ul>
 
       </div>
@@ -122,7 +132,7 @@
             <li class="nav-item"><a class="nav-link active" href="#about"><i class="fa fa-info-circle" aria-hidden="true"></i>About</a></li>
             <li class="nav-item"><a class="nav-link active" href="#contact"><i class="fa fa-fw fa-envelope"></i>Contact Us</a></li>
             <li class="nav-item dropdown has-megamenu">
-              <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown"> Services  </a>
+              <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="fas fa-chart-line"></i> Services  </a>
               <div class="dropdown-menu megamenu" role="menu">
                 <div class="row g-3">
                   <div class="col-lg-3 col-6">
@@ -145,6 +155,7 @@
                               <li><a href="MSME Registration.html">MSME Registration</a></li>
                               <li><a href="Financial Advisory.html">Financial Advisory</a></li>
                               <li><a href="Insurance Advisory.html">Insurance Advisory</a></li>
+                              <li><a href="xbrl.html">XBRL</a></li>
                             </ul>
                           </div>  <!-- col-megamenu.// -->
                         </div><!-- end col-3 -->
@@ -153,7 +164,7 @@
                             <!-- <h6 class="title">Title Menu Three</h6> -->
                             <ul class="list-unstyled">
                               <li><a href="Company Registration.html">Company Registration</a></li>
-                              <li><a href="ROC Filling.html">ROC Filling(XBRL)</a></li>
+                              <li><a href="ROC Filling.html">ROC Filling</a></li>
                               <li><a href="Legal Drafting.html">Legal Drafting</a></li>
                               <li><a href="ISO.html">ISO</a></li>
                               <li><a href="FSSAI.html">FSSAI</a></li>
@@ -179,6 +190,7 @@
       </div> <!-- container-fluid.// -->
       </nav>
   <section>
+    
     <main class="l-main">
         <!-- <div class="marquee">
             <div>*Welcome to M H Consultants go to login and get awesome discounts...</div>
@@ -203,9 +215,19 @@
   </section>
         
 </header>
-
+<!-- owner information -->
+<section style="background-color: #26E5CB; position: relative; top: 3px;">
+  <div class="media">
+    <img class="align-self-center mr-3" src="images/mh consult.png" style="top: 2px; height: 190px; width: 190px;margin-top: 10px; border: 1px solid white; border-radius: 50%; position: relative; background: white;" alt="Generic placeholder image">
+    <div class="media-body">
+      <h5 class="mt-0" style="text-align: center; font-family: 'Lato';">MR. Mritunjay Hari</h5>
+      <h5  class="mt-0" style="text-align: center;">(B.Com, LLB)</h5>
+      <p style="text-align: center; color: #0D0967;">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+    </div>
+  </div>
+</section>
 <!-- Service section -->
-<section class="services" id="services">
+<section class="services" id="services" style="background: #DDDDF1;">
  <!-- heading -->
  <div class="s-heading">
     <h1>O<font color="#4a90e2">u</font>r Ser<font color="#4a90e2">vic</font>es</h1>
@@ -236,7 +258,7 @@
             <a href="Income Tax Return.html">Income Tax Return</a>
             </div>
             <!--price-------->
-            <a class="price">₹ <font color="#06A621">1999/-</font></a>
+            <a class="price">₹ <font color="#06A621">999/-</font></a>
                 
             </div>
             
@@ -290,7 +312,7 @@
             <!-- <span>Noe Arrival</span> -->
             </div>
             <!--price-------->
-            <a class="price">₹ <font color="#06A621">1999/-</font></a>
+            <!-- <a class="price">₹ <font color="#06A621">1999/-</font></a> -->
                 
             </div>
             
@@ -346,7 +368,7 @@
             <!-- <span>Noe Arrival</span> -->
             </div>
             <!--price-------->
-            <a class="price">₹ <font color="#06A621">1999/-</font></a>
+            <!-- <a class="price">₹ <font color="#06A621">1999/-</font></a> -->
                 
             </div>
             
@@ -373,7 +395,7 @@
             <!-- <span>Noe Arrival</span> -->
             </div>
             <!--price-------->
-            <a class="price">₹ <font color="#06A621">1999/-</font></a>
+            <!-- <a class="price">₹ <font color="#06A621">1999/-</font></a> -->
                 
             </div>
             
@@ -400,7 +422,7 @@
             <!-- <span>Noe Arrival</span> -->
             </div>
             <!--price-------->
-            <a class="price">₹ <font color="#06A621">1999/-</font></a>
+            <!-- <a class="price">₹ <font color="#06A621">1999/-</font></a> -->
                 
             </div>
             
@@ -428,7 +450,7 @@
               <!-- <span>Noe Arrival</span> -->
               </div>
               <!--price-------->
-              <a class="price">₹ <font color="#06A621">1999/-</font></a>
+              <a class="price">₹ <font color="#06A621">1499-2999/-</font></a>
                   
               </div>
               
@@ -452,11 +474,11 @@
                 <div class="detail-box">
                 <!--type-------->
                 <div class="type">
-                <a href="ROC Filling.html">ROC(XBRL) Filling</a>
+                <a href="ROC Filling.html">ROC Filling</a>
                 <!-- <span>Noe Arrival</span> -->
                 </div>
                 <!--price-------->
-                <a class="price">₹ <font color="#06A621">1999/-</font></a>
+                <!-- <a class="price">₹ <font color="#06A621">1999/-</font></a> -->
                     
                 </div>
                 
@@ -484,7 +506,7 @@
                 <!-- <span>Noe Arrival</span> -->
                 </div>
                 <!--price-------->
-                <a class="price">₹ <font color="#06A621">1999/-</font></a>
+                <!-- <a class="price">₹ <font color="#06A621">1999/-</font></a> -->
                     
                 </div>
                 
@@ -512,7 +534,7 @@
                 <!-- <span>Noe Arrival</span> -->
                 </div>
                 <!--price-------->
-                <a class="price">₹ <font color="#06A621">1999/-</font></a>
+                <!-- <a class="price">₹ <font color="#06A621">1999/-</font></a> -->
                     
                 </div>
                 
@@ -541,7 +563,7 @@
                 <!-- <span>Noe Arrival</span> -->
                 </div>
                 <!--price-------->
-                <a class="price">₹ <font color="#06A621">1999/-</font></a>
+                <!-- <a class="price">₹ <font color="#06A621">1999/-</font></a> -->
                     
                 </div>
                 
@@ -569,7 +591,7 @@
                 <!-- <span>Noe Arrival</span> -->
                 </div>
                 <!--price-------->
-                <a class="price">₹ <font color="#06A621">1999/-</font></a>
+                <a class="price">₹ <font color="#06A621">299/-</font></a>
                     
                 </div>
                 
@@ -597,19 +619,12 @@
                 <!-- <span>Noe Arrival</span> -->
                 </div>
                 <!--price-------->
-                <a class="price">₹ <font color="#06A621">1999/-</font></a>
+                <a class="price">₹ <font color="#06A621">499/-</font></a>
                     
                 </div>
                 
                 </div>		
-            </li>
-
-            
-              
-              
-              
-              
-              
+            </li>   
             
         </ul>
             </section>
@@ -619,21 +634,39 @@
     </section>
     
      <!-- About page -->
-     <section class="about-section" id="about">
-        <div class="about-box">
-            <div class="imgBx">
-                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" alt="">
+      <!-- About -->
+      <section class="breadcrumbs-section" style="background-color:aliceblue ;" id="about">
+        <div class="container p-1 p-sm-3">
+          <div class="row">
+            <div class="col-12">
+              <h2>About Us</h2>
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="logout.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">About Us</li>
+              </ol>
             </div>
-            <div class="content">
-                <h2>About</h2>
-                <span>
-                    <b>M H Consultants</b> 
-                </span>
-                <p class="text">We are providing interactive online platform that makes it faster and easier to get registration of business at various registration portals and also helping to grow their business smoothly, at a reasonable cost.<span id="dots">...</span><span id="more"><font color="#000000" > We believe businesses can grow with a conscience, and succeed with a soul and that they can do it with strong determination, entrepreneur also needs various experts’ advice for his business. That's why we've created an ecosystem uniting experts with various consultancy services to help businesses grow better every day.</font></span></p>
-                <button onclick="myFunction()" id="myBtn" class="read-more-btn">Read more</button>
-            </div>
+          </div>
         </div>
-       </section>
+        </section>
+        <section class="about-company-section" style="background-color:rgb(194, 238, 231) ;">
+        <div class="cotainer p-1 p-sm-3">
+        <div class="row">
+          <div class="col-md-3 text-center">
+           <img src="images/growth.png" style="height: 200px; width: 200px;" alt="">
+          </div>
+        
+          <div class="col-9">
+          <p>
+            We are providing interactive online platform that makes it faster and easier to get registration of business at various registration portals and also helping to grow their business smoothly, at a reasonable cost.
+          </p>
+          <p>
+            We believe businesses can grow with a conscience, and succeed with a soul and that they can do it with strong determination, entrepreneur also needs various experts’ advice for his business. That's why we've created an ecosystem uniting experts with various consultancy services to help businesses grow better every day.
+          </p>
+          </div>
+        </div>
+        </div>
+        
+        </section>
        </main>
 
 <!-- contact section code start -->
@@ -641,6 +674,7 @@
     <div class=" text-center">
         <h1 class="display-4"> Co<font color="#4a90e2">nta</font>ct <font  color="#4a90e2">U</font>s</h1>
     <hr class="w-25 mx-auto">
+    <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14331.494067115245!2d85.4255299!3d26.1030472!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa420427f596780b5!2sM%20H%20CONSULTANTS!5e0!3m2!1sen!2sin!4v1636110880565!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
 </div>
 <div class="container">
 <div class="row">

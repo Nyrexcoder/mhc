@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XBRL</title>
+
+    <link rel="icon" type="image/png" sizes="96x96" href="fab/android-icon-192x192.png">
+
+    <link rel="stylesheet" href="gstRegistration.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+</head>
+<style>
+.whatsapp-icon{
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  z-index: 999;
+}
+</style>
+<body onload="pageLoding()">
+  <div id="loding">
+  </div>
+   <!-- whatsapp icon click to chat purpose -->
+   <div class="whatsapp-icon">
+    <a href="https://wa.me/918383930805" target="_blank"><img src="images/whatsapp icon.png" style="width: 50px;" class="whatsapp-icon-btn" alt="click to chat with whatsapp"></a>
+  </div>
+  <div class="logo">
+    <span class="home-logo"><b><font color="#FF5733"> M H </font>Consultants</b><br></span>
+    <div class="btn-group">
+      <button type="button" class="btn btn-info dropdown-toggle info-btn" data-bs-toggle="dropdown" aria-expanded="false" style="background:#FF5733; color: white;">
+        More information
+      </button>
+      <ul class="dropdown-menu" style="z-index: 999999999;">
+        <li><a class="dropdown-item" href="#"><i class="fas fa-phone"></i><b>Mobile </b> +91 8383930805</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="https://goo.gl/maps/9yjSb898yzdnwFv86"><i class="fas fa-home"></i><b>Address</b><br><address>
+          Rahua, near bela mode, pusa road, muazaffarpur, Bihar - 842002
+        </address></a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="https://wa.me/918383930805" target="_blank"><i class="fab fa-whatsapp"></i> Click to chat <i class="fas fa-long-arrow-alt-right"></i> </a></li>
+      </ul>
+    </div>
+    </div>
+        <!--===== HEADER =====-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-li" id="main_nav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link active" href="logout.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+               <li class="nav-item"><a class="nav-link active" href="logout.html#about"><i class="fa fa-info-circle" aria-hidden="true"></i>About</a></li>
+               <li class="nav-item"><a class="nav-link active" href="logout.html#contact"><i class="fa fa-fw fa-envelope"></i>Contact Us</a></li>
+               <li class="nav-item dropdown has-megamenu">
+                 <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="fas fa-chart-line"></i> Services  </a>
+                 <div class="dropdown-menu megamenu" role="menu">
+                   <div class="row g-3">
+                     <div class="col-lg-3 col-6">
+                       <div class="col-megamenu">
+                         <!-- <h6 class="title">Title Menu One</h6> -->
+                         <ul class="list-unstyled">
+                           <li><a href="gstRegistration&Return.html">GST Registration/Return</a></li>
+                           <li><a href="Income Tax Return.html">Income Tax Return</a></li>
+                           <li><a href="PAN.html">PAN</a></li>
+                           <li><a href="TAN.html">TAN</a></li>
+                           <li><a href="Book Keeping.html">Book Keeping</a></li>
+                               </ul>
+                             </div>  <!-- col-megamenu.// -->
+                           </div><!-- end col-3 -->
+                           <div class="col-lg-3 col-6">
+                             <div class="col-megamenu">
+                               <!-- <h6 class="title">Title Menu Two</h6> -->
+                               <ul class="list-unstyled">
+                                 <li><a href="Digital Signature.html">Digital Signature</a></li>
+                                 <li><a href="MSME Registration.html">MSME Registration</a></li>
+                                 <li><a href="Financial Advisory.html">Financial Advisory</a></li>
+                                 <li><a href="Insurance Advisory.html">Insurance Advisory</a></li>
+                                 <li><a href="xbrl.html">XBRL</a></li>
+                               </ul>
+                             </div>  <!-- col-megamenu.// -->
+                           </div><!-- end col-3 -->
+                           <div class="col-lg-3 col-6">
+                             <div class="col-megamenu">
+                               <!-- <h6 class="title">Title Menu Three</h6> -->
+                               <ul class="list-unstyled">
+                                 <li><a href="Company Registration.html">Company Registration</a></li>
+                                 <li><a href="ROC Filling.html">ROC Filling</a></li>
+                                 <li><a href="Legal Drafting.html">Legal Drafting</a></li>
+                                 <li><a href="ISO.html">ISO</a></li>
+                                 <li><a href="FSSAI.html">FSSAI</a></li>
+                         </ul>
+                       </div>  <!-- col-megamenu.// -->
+                     </div>    
+                   </div><!-- end row --> 
+                 </div> <!-- dropdown-mega-menu.// -->
+               </li>
+               <li class="nav-item"><a class="nav-link active" onclick="logout()" style="cursor: pointer;"><i class="fas fa-sign-out-alt"></i>LogOut</a></li>
+              </ul>
+            </div> <!-- navbar-collapse.// -->
+          </div> <!-- container-fluid.// -->
+          </nav>
+<!-- Main body work -->
+  <section>
+    <main class="l-main">
+      <section class="fistsection" id="home">
+          <div class="box-main">
+              <div class="first-half">
+                  <p class="text-big">XBRL<font color="#06A621"></font></p>
+                  <div class="button">
+                    <a href="#contact"><input class="gst-register-btn" type="button" onclick="gstR('XBRL')" value="Apply"/></a>
+                 </div>
+              </div>
+              <div class="second-half">
+                  <img src="images/ROC filing.jpg" alt="image">
+              </div>
+          </div>
+
+  </section> 
+  <section class="What-is-gst" id="gst">
+    <div class="discription">
+      <p>
+      <b>What is GST? </b><br>
+      It is a destination based tax on consumption of goods and services. It is proposed to be levied at all stages right from manufacture up to final consumption with credit of taxes paid at previous stages available as setoff. In a nutshell, only value addition will be taxed and burden of tax is to be borne by the final consumer. <br>
+      <br>
+     <b> Benefits: </b><br>
+     &#9679; Remove cascading effect of various  taxes, <br>
+     &#9679; Free flow of trade throughout the country. <br>
+     &#9679; Reduce compliance cost as compare to previous various Tax Law <br>
+     &#9679; Reduced Tax Evasion and Corruption Free Tax Administration <br>
+     &#9679; Advantages for the government an traders<br>
+<br>
+<hr>
+<span id="dots"></span><span id="more">
+    <br> <b>What is GSTN and its role in the GST regime?</b><br>
+GSTN stands for Goods and Service Tax Network (GSTN). A Special Purpose Vehicle called the GSTN has been set up to cater to the needs of GST. The GSTN shall provide a shared IT infrastructure and services to Central and State Governments, tax payers and other stakeholders for implementation of GST. The functions of the GSTN would, inter alia, include: <br>
+<br>
+&#9679; facilitating registration; <br>
+&#9679;	forwarding the returns to Central and State authorities; <br>
+&#9679;	computation and settlement of IGST; <br>
+&#9679;	matching of tax payment details with banking network; <br>
+&#9679;	providing various MIS reports to the Central and the State Governments based on the tax payer return information; <br>
+&#9679;	providing analysis of tax payers’ profile; and <br>&#9679;	running the matching engine for matching, reversal and reclaim of input tax credit. <br>
+<br>
+GST portal with the existing tax administration IT systems and would be building interfaces for tax payers.       Further, the GSTN is developing back-end modules like assessment, audit, refund, appeal etc. for various States and UTs. <br>
+<br>
+Integration of GST front-end system with back-end systems will have to be completed and tested well in advance for making the transition smooth. <br>
+<br>
+<hr>
+<br>
+<b>Persons liable for registration under GST. </b><br>
+Following categories of persons shall be required to be registered compulsorily irrespective of the threshold limit <br>
+&#9679;	Supplier of online information <br>
+&#9679;	Dedicator of tax at source <br>
+&#9679;	Interstate taxable supply <br>
+&#9679;	 Input service distributor <br>
+&#9679;	Casual taxable persons <br>
+&#9679;	Reverse charge taxpayer <br>
+&#9679; Every Electronic commerce operators <br>
+&#9679;	Non- resident taxable persons <br>
+&#9679;	Who cross the threshold limits <br>
+<br>
+<hr>
+<br>
+<b>Advantages of taking registration under GST.</b> <br>
+&#9679;	Legally recognized as supplier of goods or services <br>
+&#9679;	Input and output tax setoff <br>
+&#9679;	Legally authorized to collect tax from his purchasers <br>
+&#9679;	Eligible to avail various other benefits and privileges under the GST laws <br>   
+</span></p>
+<button onclick="myFunction()" id="myBtn" class="read-more">Read more</button>
+     </div>
+</section>         
+
+<section class="main_heading my-5 bg-light pt-5" id="contact">
+  <div class=" text-center">
+      <h1 class="display-4"> A<font color="#4a90e2">pp</font>ly</h1>
+  <hr class="w-25 mx-auto">
+</div>
+<div class="container">
+<div class="row">
+  <div class="col-xxl-8 col-10 col-md-8 mx-auto">
+      <form action="https://formspree.io/f/xvoddwap" id="ApplyForm" method="POST">
+        <div class="mb-3">
+          <label for="name" class="form-label">Purpose<font color="red">*</font></label>
+          <input type="text"  class="form-control" name="Purpose" id="purpose" placeholder="Purpose" required>
+          <!-- <input type="text" class="form-control" id="" name="Name" required> -->
+        </div>
+          <div class="mb-3">
+              <label for="exampleDataList" class="form-label">Select state<font color="red">*</font></label>
+<input class="form-control" list="datalistOptions" id="exampleDataList" name="State" placeholder="Type to search...">
+<datalist id="datalistOptions">
+  <option value="Andhra Pradesh">Andhra Pradesh</option>
+  <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+  <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+  <option value="Assam">Assam</option>
+  <option value="Bihar">Bihar</option>
+  <option value="Chandigarh">Chandigarh</option>
+  <option value="Chhattisgarh">Chhattisgarh</option>
+  <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+  <option value="Daman and Diu">Daman and Diu</option>
+  <option value="Delhi">Delhi</option>
+  <option value="Lakshadweep">Lakshadweep</option>
+  <option value="Puducherry">Puducherry</option>
+  <option value="Goa">Goa</option>
+  <option value="Gujarat">Gujarat</option>
+  <option value="Haryana">Haryana</option>
+  <option value="Himachal Pradesh">Himachal Pradesh</option>
+  <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+  <option value="Jharkhand">Jharkhand</option>
+  <option value="Karnataka">Karnataka</option>
+  <option value="Kerala">Kerala</option>
+  <option value="Madhya Pradesh">Madhya Pradesh</option>
+  <option value="Maharashtra">Maharashtra</option>
+  <option value="Manipur">Manipur</option>
+  <option value="Meghalaya">Meghalaya</option>
+  <option value="Mizoram">Mizoram</option>
+  <option value="Nagaland">Nagaland</option>
+  <option value="Odisha">Odisha</option>
+  <option value="Punjab">Punjab</option>
+  <option value="Rajasthan">Rajasthan</option>
+  <option value="Sikkim">Sikkim</option>
+  <option value="Tamil Nadu">Tamil Nadu</option>
+  <option value="Telangana">Telangana</option>
+  <option value="Tripura">Tripura</option>
+  <option value="Uttar Pradesh">Uttar Pradesh</option>
+  <option value="Uttarakhand">Uttarakhand</option>
+  <option value="West Bengal">West Bengal</option>
+</datalist>
+          </div>
+          <div class="mb-3">
+            <label for="City" class="form-label">City<font color="red">*</font></label>
+            <input type="text" class="form-control" id="exampleInputPassword1" name="City" required>
+          </div>
+         
+          <div class="mb-3">
+              <label for="name" class="form-label">Full name<font color="red">*</font></label>
+              <input type="text" class="form-control" id="exampleInputPassword1" name="Name" required>
+            </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address<font color="red">*</font></label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="Email">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <!-- <div class="mb-3">
+              <label for="formFile" class="form-label">Select file</label>
+              <input class="form-control" type="file" id="formFile">
+            </div> -->
+            <div class="mb-3">
+              <label for="Phone" class="form-label">Phone<font color="red">*</font></label>
+              <input type="number" class="form-control" id="exampleInputPassword1" name="Phone" required>
+            </div>
+
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+            <label class="form-check-label" for="exampleCheck1">Confirm</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="reset" id="reset" class="btn btn-danger">Reset</button>
+        </form>
+  </div>
+</div>
+</div>
+</section>
+<!-- contact section code end -->
+
+                 <!-- footer  -->
+    <footer class="footer">
+        <p class="footer__title">M H Consultants</p>
+        <div class="footer__social">
+            <a target="_blank" href="https://www.facebook.com/" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+            <a target="_blank" href="https://www.instagram.com/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+            <a target="_blank" href="https://www.twitter.com/" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+        </div>
+        <p>&#169; 2021-2022 copyright all right reserved</p>
+    </footer>
+
+    <script src="js/gst return.js"></script>
+    
+       <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use-->
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+
+<!-- Integration of firebase databse -->
+<script>
+const firebaseConfig = {
+apiKey: "AIzaSyDvK8sb4nu8WnaC3hOHgtTxD-smazx2zj4",
+authDomain: "m-h-consultants.firebaseapp.com",
+projectId: "m-h-consultants",
+storageBucket: "m-h-consultants.appspot.com",
+messagingSenderId: "209945457325",
+appId: "1:209945457325:web:6d5ee3e51b4112f3ad4c24"
+};
+// Initialize Firebase
+// Initialize Firebase
+const app =firebase.initializeApp(firebaseConfig);
+// var database = firebase.database();
+const auth = firebase.auth();
+
+</script>
+<!-- SignOut function -->
+    <script>
+      function logout(){
+        firebase.auth().signOut().then(() => {
+  // Sign-out successful.
+  window.location.replace("./index.html");
+}).catch((error) => {
+  alert(error);
+  // An error happened.
+});
+      }
+    </script>
+<script>
+  function resetform(){
+    document.getElementById("ApplyForm").reset();
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+
+</body>
+</html>

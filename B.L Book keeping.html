@@ -34,14 +34,26 @@
         display: none;
       }
   }
+
+  .whatsapp-icon{
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  z-index: 999;
+}
 </style>
 <body onload="pageLoding()">
   <div id="loding">
   </div>
+   <!-- whatsapp icon click to chat purpose -->
+   <div class="whatsapp-icon">
+    <a href="https://wa.me/918383930805" target="_blank"><img src="images/whatsapp icon.png" style="width: 50px;" class="whatsapp-icon-btn" alt="click to chat with whatsapp"></a>
+  </div>
+  
   <div class="logo">
     <span class="home-logo"><b><font color="#FF5733"> M H </font>Consultants</b><br></span>
-    <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-      Info
+    <button type="button" class="btn btn-info dropdown-toggle info-btn" data-bs-toggle="dropdown" aria-expanded="false" style="background:#FF5733; color: white;">
+      More information
     </button>
     <ul class="dropdown-menu" style="z-index: 9999999;">
       <li><a class="dropdown-item" href=""><i class="fas fa-phone"></i><b>Mobile </b>+91 8383930805</a></li>
@@ -50,7 +62,7 @@
         Rahua, near bela mode, pusa road, muazaffarpur, Bihar - 842002
       </address></a></li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">More <i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+      <li><a class="dropdown-item" href="https://wa.me/918383930805" target="_blank"><i class="fab fa-whatsapp"></i> Click to chat <i class="fas fa-long-arrow-alt-right"></i> </a></li>
     </ul>
   
         </div>
@@ -66,7 +78,7 @@
                 <li class="nav-item"><a class="nav-link active" href="index.html#about"><i class="fa fa-info-circle" aria-hidden="true"></i>About</a></li>
                 <li class="nav-item"><a class="nav-link active" href="index.html#contact"><i class="fa fa-fw fa-envelope"></i>Contact Us</a></li>
                 <li class="nav-item dropdown has-megamenu">
-                  <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown"> Services  </a>
+                  <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="fas fa-chart-line"></i> Services  </a>
                   <div class="dropdown-menu megamenu" role="menu">
                     <div class="row g-3">
                       <div class="col-lg-3 col-6">
@@ -89,7 +101,7 @@
                             <li><a href="B.L MSME Registration.html">MSME Registration</a></li>
                             <li><a href="B.L Financial Advisory.html">Financial Advisory</a></li>
                             <li><a href="B.L Insurance Advisory.html">Insurance Advisory</a></li>
-                            <li><a href="database/auth.html">Pollutin & Other Licensing</a></li>
+                            <li><a href="B.L xbrl.html">XBRL</a></li>
                           </ul>
                         </div>  <!-- col-megamenu.// -->
                       </div><!-- end col-3 -->
@@ -98,7 +110,7 @@
                           <!-- <h6 class="title">Title Menu Three</h6> -->
                           <ul class="list-unstyled">
                             <li><a href="B.L Company Registration.html">Company Registration</a></li>
-                            <li><a href="B.L ROC Filling.html">ROC Filling(XBRL)</a></li>
+                            <li><a href="B.L ROC Filling.html">ROC Filling</a></li>
                             <li><a href="B.L Legal Drafting.html">Legal Drafting</a></li>
                             <li><a href="B.L ISO.html">ISO</a></li>
                             <li><a href="B.L FSSAI.html">FSSAI</a></li>
@@ -127,7 +139,7 @@
       <section class="fistsection" id="home">
           <div class="box-main">
               <div class="first-half">
-                  <p class="text-big">Book Keeping <font color="#06A621">*  ₹ 1999/-</font></p>
+                  <p class="text-big">Book Keeping <font color="#06A621"></font></p>
                   <div class="button">
                     <!-- onclick="gstR('Book Keeping ₹ 1999')" value="Apply"/> -->
                     <a href="database/auth.html"><input class="gst-register-btn" type="button" value="Apply"></a>

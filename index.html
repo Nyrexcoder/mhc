@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M H Consultants</title>
+    <title>M H Consultants : Home</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="jarallax.css">
@@ -31,7 +31,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     
 <!--light-slider.css------------->
     <link rel="stylesheet" type="text/css" href="css/lightslider.css">
@@ -42,6 +42,8 @@
 </head>
 
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <script>
   $(document).ready(function(){
@@ -71,9 +73,97 @@
         display: none;
       }
   }
+
+
+
+/* notice */
+  .notice-container {
+    border: 2px solid;
+    width: 18em;
+    height: 20em;
+    margin: 1em auto;
+    overflow: hidden;
+    background: white;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.marquee {
+    top: 6em;
+    position: relative;
+    box-sizing: border-box;
+    animation: marquee 15s linear infinite;
+}
+
+
+.marquee:hover {
+    animation-play-state: paused;
+}
+
+/* Make it move! */
+@keyframes marquee {
+    0%   { top:   8em }
+    100% { top: -11em }
+}
+
+/* Make it look pretty */
+.microsoft .marquee {
+	margin: 0;
+    padding: 0 1em;
+    line-height: 1.5em;
+    font: 1em 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+}
+
+.microsoft:before, .microsoft::before,
+.microsoft:after,  .microsoft::after {
+    left: 0;
+    z-index: 1;
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    width: 100%; height: 2em;
+    background-image: linear-gradient(180deg, #FFF, rgba(255,255,255,0));
+}
+
+.microsoft:after, .microsoft::after {
+    bottom: 0;
+    transform: rotate(180deg);
+}
+
+.microsoft:before, .microsoft::before {
+    top: 0;
+}
+
+/* Style the links */
+.vanity {
+    color: #333;
+    text-align: center;
+    font: .75em 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+}
+
+.vanity a, .microsoft a {
+    color: #1570A6;
+    transition: color .5s;
+    text-decoration: none;
+}
+
+.vanity a:hover, .microsoft a:hover {
+    color: #F65314;
+}
+
+.whatsapp-icon{
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  z-index: 999;
+}
 </style>
 <body onload="pageLoding()">
     <div id="loding">
+    </div>
+    <!-- whatsapp icon click to chat purpose -->
+    <div class="whatsapp-icon">
+      <a href="https://wa.me/918383930805" target="_blank"><img src="images/whatsapp icon.png" style="width: 50px;" class="whatsapp-icon-btn" alt="click to chat with whatsapp"></a>
     </div>
     <!-- modal -->
     <div id="myModal" class="modal fade animate__animated animate__bounce animate__delay-1s	1s">
@@ -97,17 +187,17 @@
           <!-- log section -->
     <div class="logo">
     <span class="home-logo"><b><font color="#FF5733"> M H </font>Consultants</b><br></span>
-    <button type="button" class="btn btn-info dropdown-toggle info-btn" data-bs-toggle="dropdown" aria-expanded="false">
-      Info
+    <button type="button" class="btn btn-info dropdown-toggle info-btn" data-bs-toggle="dropdown" aria-expanded="false" style="background:#FF5733; color: white;">
+      More information
     </button>
     <ul class="dropdown-menu" style="z-index: 9999999;">
-      <li><a class="dropdown-item" href=""><i class="fas fa-phone"></i><b>Mobile </b>+91 8383930805</a></li>
+      <li><a class="dropdown-item" href=""><i class="fas fa-phone"></i> <b>Mobile </b>+91 8383930805</a></li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="https://goo.gl/maps/9yjSb898yzdnwFv86"><i class="fa fa-map-marker" aria-hidden="true"></i><b>Address</b><br><address>
+      <li><a class="dropdown-item" href="https://goo.gl/maps/9yjSb898yzdnwFv86"><i class="fas fa-map-marker-alt"></i> <b>Address</b><br><address>
         Rahua, near bela mode, pusa road, muazaffarpur, Bihar - 842002
       </address></a></li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">More <i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+      <li><a class="dropdown-item" href="https://wa.me/918383930805" target="_blank"><i class="fab fa-whatsapp"></i> Click to chat <i class="fas fa-long-arrow-alt-right"></i> </a></li>
     </ul>
   
         </div>
@@ -125,7 +215,7 @@
             <li class="nav-item"><a class="nav-link active" href="#about"><i class="fa fa-info-circle" aria-hidden="true"></i>About</a></li>
             <li class="nav-item"><a class="nav-link active" href="#contact"><i class="fa fa-fw fa-envelope"></i>Contact Us</a></li>
             <li class="nav-item dropdown has-megamenu">
-              <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown"> Services  </a>
+              <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="fas fa-chart-line"></i> Services  </a>
               <div class="dropdown-menu megamenu" role="menu">
                 <div class="row g-3">
                   <div class="col-lg-3 col-6">
@@ -148,7 +238,7 @@
                         <li><a href="B.L MSME Registration.html">MSME Registration</a></li>
                         <li><a href="B.L Financial Advisory.html">Financial Advisory</a></li>
                         <li><a href="B.L Insurance Advisory.html">Insurance Advisory</a></li>
-                        <li><a href="database/auth.html">Pollutin & Other Licensing</a></li>
+                        <li><a href="B.L xbrl.html">XBRL</a></li>
                       </ul>
                     </div>  <!-- col-megamenu.// -->
                   </div><!-- end col-3 -->
@@ -157,7 +247,7 @@
                       <!-- <h6 class="title">Title Menu Three</h6> -->
                       <ul class="list-unstyled">
                         <li><a href="B.L Company Registration.html">Company Registration</a></li>
-                        <li><a href="B.L ROC Filling.html">ROC Filling(XBRL)</a></li>
+                        <li><a href="B.L ROC Filling.html">ROC Filling</a></li>
                         <li><a href="B.L Legal Drafting.html">Legal Drafting</a></li>
                         <li><a href="B.L ISO.html">ISO</a></li>
                         <li><a href="B.L FSSAI.html">FSSAI</a></li>
@@ -176,15 +266,13 @@
       </div> <!-- container-fluid.// -->
       </nav>
   <section>
-    <marquee style="font-size:13pt;" width="100%" direction="left" height="25px" bgcolor="#F8BBAE" vspace="20px"
+    <marquee style="font-size:13pt;" width="100%" direction="left" height="25px" vspace="20px"
     onmouseover="this.stop();"
     onmouseout="this.start();">
-        <font color="#bc460b">*Signup for best offers and discounts so don't be late to pair with M H Consultants.....*</font>
+        <font color="#bc460b">*Signup for best offers and discounts so don't be late to pair with us*</font>
     </marquee>
+  </section>
     <main class="l-main">
-        <!-- <div class="marquee">
-            <div>*Welcome to M H Consultants go to login and get awesome discounts...</div>
-        </div> -->
         <section class="fistsection" id="home">
             <div class="image-box jarallax">
                 <img class="jarallax-img" src="https://images.unsplash.com/photo-1633113089635-115b38c66c49?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" alt="Home-Image">
@@ -203,11 +291,45 @@
             </div>
         </div>
   </section>
-        
 </header>
+<!-- notification -->
+<!-- <section>
+  <h5 style="color: red; width: 207px; margin: auto; top: 5px; position: relative;"><b>Important Notice</b> <img style="height: 25px; width: 25px; display: inline-block;" src="images/newicon.gif" alt=""></h5>
+  <div class="microsoft notice-container">
+    <ol class="marquee" style="text-align: center; text-decoration: none;">
+      <li><a href="www.google.com"></a>gst</li>
+      <li><a href=""></a>itr</li>
+      <li><a href=""></a>neeraj</li>
+      <li><a href=""></a>nikhil</li>
+      <li><a href=""></a>avtar</li>
+      <li><a href=""></a>chandan</li>
+      <li><a href=""></a>meena</li>
+      <li><a href=""></a>ashav</li>
+      <li><a href=""></a>bheem</li>
+      <li><a href=""></a>arjun</li>
+    </ol>
+</section> -->
 
+<!-- owner info -->
+<section style="background-color: #26E5CB; position: relative; top: 3px;">
+  <div class="media">
+    <img class="align-self-center mr-3" src="images/mh consult.png" style="top: 2px; height: 190px; width: 190px;margin-top: 10px; border: 1px solid white; border-radius: 50%; position: relative; background: white;" alt="Generic placeholder image">
+    <div class="media-body">
+      <h5 class="mt-0" style="text-align: center; font-family: 'Lato';">MR. Mritunjay Hari</h5>
+      <h5  class="mt-0" style="text-align: center;">(B.Com, LLB)</h5>
+      <p style="text-align: center; color: #0D0967;">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+    </div>
+  </div>
+</section>
+
+<!-- notification section -->
+<!-- <section style="margin: auto; position: relative;">
+  <marquee width="60%" direction="up" height="100px">
+    This is a sample scrolling text that has scrolls in the upper direction.
+    </marquee>
+</section> -->
 <!-- Service section -->
-<section class="services" id="services">
+<section class="services" id="services" style="background: #DDDDF1;">
  <!-- heading -->
  <div class="s-heading">
     <h1>O<font color="#4a90e2">u</font>r Ser<font color="#4a90e2">vic</font>es</h1>
@@ -239,7 +361,7 @@
             <!-- <span>Noe Arrival</span> -->
             </div>
             <!--price-------->
-            <a class="price">₹ <font color="#06A621">1999/-</font></a>
+            <a class="price">₹ <font color="#06A621">999/-</font></a>
                 
             </div>
             
@@ -251,7 +373,7 @@
             <div class="box">
             <!--img-box---------->
             <div class="slide-img">
-            <img alt="2" src="https://source.unsplash.com/weekly?tax">
+            <img alt="2" src="Gst Registrarion.png">
             <!--overlayer---------->
             <div class="overlay">
             <!--buy-btn------>	
@@ -293,7 +415,7 @@
             <!-- <span>Noe Arrival</span> -->
             </div>
             <!--price-------->
-            <a class="price">₹ <font color="#06A621">1999/-</font></a>
+            <!-- <a class="price">₹ <font color="#06A621">1999/-</font></a> -->
                 
             </div>
             
@@ -349,7 +471,7 @@
             <!-- <span>Noe Arrival</span> -->
             </div>
             <!--price-------->
-            <a class="price">₹ <font color="#06A621">1999/-</font></a>
+            <!-- <a class="price">₹ <font color="#06A621">1999/-</font></a> -->
                 
             </div>
             
@@ -376,7 +498,7 @@
             <!-- <span>Noe Arrival</span> -->
             </div>
             <!--price-------->
-            <a class="price">₹ <font color="#06A621">1999/-</font></a>
+            <!-- <a class="price">₹ <font color="#06A621">1999/-</font></a> -->
                 
             </div>
             
@@ -403,7 +525,7 @@
             <!-- <span>Noe Arrival</span> -->
             </div>
             <!--price-------->
-            <a class="price">₹ <font color="#06A621">1999/-</font></a>
+            <!-- <a class="price">₹ <font color="#06A621">1999/-</font></a> -->
                 
             </div>
             
@@ -416,7 +538,7 @@
               <div class="box">
               <!--img-box---------->
               <div class="slide-img">
-              <img alt="9" src="https://source.unsplash.com/weekly?account">
+              <img alt="9" src="images/DS-removebg.png" alt="Digital Signature">
               <!--overlayer---------->
               <div class="overlay">
               <!--buy-btn------>	
@@ -431,7 +553,7 @@
               <!-- <span>Noe Arrival</span> -->
               </div>
               <!--price-------->
-              <a class="price">₹ <font color="#06A621">1999/-</font></a>
+              <a class="price">₹ <font color="#06A621">1499-2999/-</font></a>
                   
               </div>
               
@@ -455,11 +577,11 @@
               <div class="detail-box">
               <!--type-------->
               <div class="type">
-              <a href="B.L ROC Filling.html">ROC(XBRL) Filling</a>
+              <a href="B.L ROC Filling.html">ROC Filling</a>
               <!-- <span>Noe Arrival</span> -->
               </div>
               <!--price-------->
-              <a class="price">₹ <font color="#06A621">1999/-</font></a>
+              <!-- <a class="price">₹ <font color="#06A621">1999/-</font></a> -->
                   
               </div>
               
@@ -488,7 +610,7 @@
                   <!-- <span>Noe Arrival</span> -->
                   </div>
                   <!--price-------->
-                  <a class="price">₹ <font color="#06A621">1999/-</font></a>
+                  <!-- <a class="price">₹ <font color="#06A621">1999/-</font></a> -->
                       
                   </div>
                   
@@ -516,7 +638,7 @@
                 <!-- <span>Noe Arrival</span> -->
                 </div>
                 <!--price-------->
-                <a class="price">₹ <font color="#06A621">1999/-</font></a>
+                <!-- <a class="price">₹ <font color="#06A621">1999/-</font></a> -->
                     
                 </div>
                 
@@ -545,7 +667,7 @@
                 <!-- <span>Noe Arrival</span> -->
                 </div>
                 <!--price-------->
-                <a class="price">₹ <font color="#06A621">1999/-</font></a>
+                <!-- <a class="price">₹ <font color="#06A621">1999/-</font></a> -->
                     
                 </div>
                 
@@ -573,7 +695,7 @@
                 <!-- <span>Noe Arrival</span> -->
                 </div>
                 <!--price-------->
-                <a class="price">₹ <font color="#06A621">1999/-</font></a>
+                <a class="price">₹ <font color="#06A621">299/-</font></a>
                     
                 </div>
                 
@@ -602,7 +724,7 @@
       <!-- <span>Noe Arrival</span> -->
       </div>
       <!--price-------->
-      <a class="price">₹ <font color="#06A621">1999/-</font></a>
+      <a class="price">₹ <font color="#06A621">499/-</font></a>
           
       </div>
       
@@ -617,33 +739,53 @@
     </section>
     
      <!-- About page -->
-     <section class="about-section" id="about">
-        <div class="about-box">
-            <div class="imgBx">
-                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" alt="">
-            </div>
-            <div class="content">
-                <h2>About</h2>
-                <span>
-                    <b>M H Consultants</b> 
-                </span>
-                <p class="text">We are providing interactive online platform that makes it faster and easier to get registration of business at various registration portals and also helping to grow their business smoothly, at a reasonable cost.<span id="dots">...</span><span id="more"><font color="#000000" > We believe businesses can grow with a conscience, and succeed with a soul and that they can do it with strong determination, entrepreneur also needs various experts’ advice for his business. That's why we've created an ecosystem uniting experts with various consultancy services to help businesses grow better every day.</font></span></p>
-                <button onclick="myFunction()" id="myBtn" class="read-more-btn">Read more</button>
-            </div>
+     <!-- About -->
+     <section class="breadcrumbs-section" style="background-color:aliceblue ;" id="about">
+      <div class="container p-1 p-sm-3">
+        <div class="row">
+          <div class="col-12">
+            <h2><i class="fa fa-info-circle" aria-hidden="true"></i> About Us</h2>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">About Us</li>
+            </ol>
+          </div>
         </div>
-       </section>
+      </div>
+      </section>
+      <section class="about-company-section" style="background-color:rgb(194, 238, 231) ;">
+      <div class="cotainer p-1 p-sm-3">
+      <div class="row">
+        <div class="col-md-3 text-center">
+         <img src="images/growth.png" style="height: 200px; width: 200px;" alt="">
+        </div>
+      
+        <div class="col-9">
+        <p>
+          We are providing interactive online platform that makes it faster and easier to get registration of business at various registration portals and also helping to grow their business smoothly, at a reasonable cost.
+        </p>
+        <p>
+          We believe businesses can grow with a conscience, and succeed with a soul and that they can do it with strong determination, entrepreneur also needs various experts’ advice for his business. That's why we've created an ecosystem uniting experts with various consultancy services to help businesses grow better every day.
+        </p>
+        </div>
+      </div>
+      </div>
+      
+      </section>
        </main>
 
 <!-- contact section code start -->
 <section class="main_heading my-5 bg-light pt-5" id="contact">
     <div class=" text-center">
         <h1 class="display-4"> Co<font color="#4a90e2">nta</font>ct <font  color="#4a90e2">U</font>s</h1>
-    <hr class="w-25 mx-auto">
+        <hr class="w-25 mx-auto">
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14331.494067115245!2d85.4255299!3d26.1030472!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa420427f596780b5!2sM%20H%20CONSULTANTS!5e0!3m2!1sen!2sin!4v1636110880565!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+    
 </div>
 <div class="container">
 <div class="row">
     <div class="col-xxl-8 col-10 col-md-8 mx-auto">
-        <form action="https://formspree.io/f/xvoddwap" method="POST">
+      <form class="row g-3 needs-validation" novalidate>
             <div class="mb-3">
                 <label for="exampleDataList" class="form-label">Select state<font color="red">*</font></label>
 <input class="form-control" list="datalistOptions" id="exampleDataList" name="State" placeholder="Type to search...">
@@ -722,15 +864,101 @@
 <!-- https://formspree.io/f/xvoddwap -->
 
     <!-- footer  -->
-    <footer class="footer">
-        <p class="footer__title">M H Consultants</p>
-        <div class="footer__social">
-            <a target="_blank" href="https://www.facebook.com/" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-            <a target="_blank" href="https://www.instagram.com/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-            <a target="_blank" href="https://www.twitter.com/" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold"><font color="#245F81">M H Consultants</font></h5>
+            <p>
+              We are providing interactive online platform that makes it faster and easier to get registration of business at various registration portals and also helping to grow their business smoothly, at a reasonable cost.
+            </p>
+          </div>
+      
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold"><font color="#245F81">Products</font></h5>
+            <p>
+              <a href="" class="text-white" style="text-decoration: none;">TheProviders</a>
+            </p>
+            <p>
+              <a href="" class="text-white" style="text-decoration: none;">Creativity</a>
+            </p>
+            <p>
+              <a href="" class="text-white" style="text-decoration: none;">SourceFile</a>
+            </p>
+            <p>
+              <a href="" class="text-white" style="text-decoration: none;">Bootstrap</a>
+            </p>
+          </div>
+      
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold"><font color="#245F81">Useful Links</font></h5>
+            <p>
+              <a href="" class="text-white" style="text-decoration: none;">Your Account</a>
+            </p>
+            <p>
+              <a href="" class="text-white" style="text-decoration: none;">Become an Affiliates</a>
+            </p>
+            <p>
+              <a href="" class="text-white" style="text-decoration: none;">Shipping Rates</a>
+            </p>
+            <p>
+              <a href="" class="text-white" style="text-decoration: none;">Help</a>
+            </p>
+          </div>
+      
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold"><font color="#245F81">Contact</font></h5>
+            <p>
+              <i class="fas fa-home mr-3"></i> Rahua, near bela mode, pusa road, muazaffarpur, Bihar - 842002
+            </p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> mhariconsult2020@gmail.com
+            </p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> +91 8383930805
+            </p>
+          </div>
         </div>
-        <p>&#169; 2021-2022 copyright all right reserved</p>
-    </footer>
+      
+        <hr class="mb-4">
+          <div class="row align-item-center">
+      <div class="col-md-7 col-lg-8">
+      <p>Copyright 2022 All right reserved by:
+        <a href="" style="text-decoration: none;"><strong><font color="#245F81"> The TheProviders</font></strong></a>
+      </p>
+      
+      </div>
+      
+      <div class="col-md-5 col-lg-4">
+      <div class="text-center text-md-right">
+      
+        <ul class="list-unstyled list-inline">
+          <li class="list-inline-item">
+            <a href="" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+          </li>
+      
+          <li class="list-inline-item">
+            <a href="" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-twitter"></i></a>
+          </li>
+      
+          <li class="list-inline-item">
+            <a href="" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-google-plus"></i></a>
+          </li>
+      
+          <li class="list-inline-item">
+            <a href="" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+      
+          <li class="list-inline-item">
+            <a href="" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-youtube"></i></a>
+          </li>
+        </ul>
+      </div>
+      </div>
+          </div>
+        </hr>
+      </div>
+      </footer>
 
     <script src="js/index.js"></script>
     <script src="js/jarallax-element.js"></script>
