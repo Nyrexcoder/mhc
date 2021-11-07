@@ -33,6 +33,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
 <!--light-slider.css------------->
     <link rel="stylesheet" type="text/css" href="css/lightslider.css">
 <!--Jquery-------------------->
@@ -53,6 +55,45 @@
     })
 </script>
 <style>
+  a{
+    text-decoration: none;
+  }
+  #button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 95px;
+  right: 21px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
  
   .g-3{
     font-size: 16px;
@@ -141,11 +182,11 @@
     font: .75em 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
 }
 
-.vanity a, .microsoft a {
+/* .vanity a, .microsoft a {
     color: #1570A6;
     transition: color .5s;
     text-decoration: none;
-}
+} */
 
 .vanity a:hover, .microsoft a:hover {
     color: #F65314;
@@ -161,6 +202,9 @@
 <body onload="pageLoding()">
     <div id="loding">
     </div>
+    <!-- page up button -->
+   <!-- Back to top button -->
+<a id="button"></a>
     <!-- whatsapp icon click to chat purpose -->
     <div class="whatsapp-icon">
       <a href="https://wa.me/918383930805" target="_blank"><img src="images/whatsapp icon.png" style="width: 50px;" class="whatsapp-icon-btn" alt="click to chat with whatsapp"></a>
@@ -346,7 +390,7 @@
             <div class="box">
             <!--img-box---------->
             <div class="slide-img">
-            <img alt="1" src="https://source.unsplash.com/weekly?profit">
+            <img alt="1" src="https://cdn.pixabay.com/photo/2017/07/20/18/39/tax-consultant-2523265_960_720.png">
             <!--overlayer---------->
             <div class="overlay">
             <!--buy-btn------>	
@@ -373,7 +417,7 @@
             <div class="box">
             <!--img-box---------->
             <div class="slide-img">
-            <img alt="2" src="Gst Registrarion.png">
+            <img alt="2" src="images/Gst Registrarion.png">
             <!--overlayer---------->
             <div class="overlay">
             <!--buy-btn------>	
@@ -429,7 +473,7 @@
             <div class="box">
             <!--img-box---------->
             <div class="slide-img">
-            <img alt="5" src="https://source.unsplash.com/weekly?company">
+            <img style="width: 150px; height: 150px; position: relative; top: 150px;" alt="5" src="images/msme_image-removebg-preview.png">
             <!--overlayer---------->
             <div class="overlay">
             <!--buy-btn------>	
@@ -456,7 +500,7 @@
             <div class="box">
             <!--img-box---------->
             <div class="slide-img">
-            <img alt="6" src="https://source.unsplash.com/weekly?manage">
+            <img alt="6" src="images/financial advisory.jfif">
             <!--overlayer---------->
             <div class="overlay">
             <!--buy-btn------>	
@@ -483,7 +527,7 @@
             <div class="box">
             <!--img-box---------->
             <div class="slide-img">
-            <img alt="7" src="https://source.unsplash.com/weekly?business">
+            <img alt="7" src="images/insurance advisory.jfif">
             <!--overlayer---------->
             <div class="overlay">
             <!--buy-btn------>	
@@ -510,7 +554,7 @@
             <div class="box">
             <!--img-box---------->
             <div class="slide-img">
-            <img alt="8" src="https://source.unsplash.com/weekly?account">
+            <img style="width: 250px; height: 250px; position: relative; top: 100px;" alt="8" src="https://startupefilings.com/images/documentaion.png">
             <!--overlayer---------->
             <div class="overlay">
             <!--buy-btn------>	
@@ -566,7 +610,7 @@
               <div class="box">
               <!--img-box---------->
               <div class="slide-img">
-              <img alt="9" src="https://source.unsplash.com/weekly?account">
+              <img style="width: 200px; height: 270px; position: relative; top: 100px;" alt="9" src="images/ministry-of-corporate-affairs-removebg-preview.png">
               <!--overlayer---------->
               <div class="overlay">
               <!--buy-btn------>	
@@ -595,7 +639,7 @@
                   <div class="box">
                   <!--img-box---------->
                   <div class="slide-img">
-                  <img alt="11" src="https://source.unsplash.com/weekly?account">
+                  <img alt="11" src="images/leagal drafting.jfif">
                   <!--overlayer---------->
                   <div class="overlay">
                   <!--buy-btn------>	
@@ -623,7 +667,7 @@
                 <div class="box">
                 <!--img-box---------->
                 <div class="slide-img">
-                <img alt="12" src="https://source.unsplash.com/weekly?account">
+                <img style="height: 200px; width: 200px; position: relative; top: 100px;" alt="12" src="images/iso-removebg-preview.png">
                 <!--overlayer---------->
                 <div class="overlay">
                 <!--buy-btn------>	
@@ -652,7 +696,7 @@
                 <div class="box">
                 <!--img-box---------->
                 <div class="slide-img">
-                <img alt="8" src="https://source.unsplash.com/weekly?account">
+                <img style="width: 200px; height: 100px; position: relative; top: 150px;" alt="8" src="images/FSSAI_logo-removebg-preview.png">
                 <!--overlayer---------->
                 <div class="overlay">
                 <!--buy-btn------>	
@@ -680,7 +724,7 @@
                 <div class="box">
                 <!--img-box---------->
                 <div class="slide-img">
-                <img alt="14" src="https://source.unsplash.com/weekly?account">
+                <img style="width: 300px; height: 300px; position: relative; top: 100px;" alt="14" src="images/pan-card-removebg-preview.png">
                 <!--overlayer---------->
                 <div class="overlay">
                 <!--buy-btn------>	
@@ -709,7 +753,7 @@
       <div class="box">
       <!--img-box---------->
       <div class="slide-img">
-      <img alt="8" src="https://source.unsplash.com/weekly?account">
+      <img style="width: 250px; height: 250px; position: relative; top: 100px;" alt="8" src="images/tan-removebg-preview.png">
       <!--overlayer---------->
       <div class="overlay">
       <!--buy-btn------>	
@@ -875,18 +919,18 @@
           </div>
       
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 font-weight-bold"><font color="#245F81">Products</font></h5>
+            <h5 class="text-uppercase mb-4 font-weight-bold"><font color="#245F81">Services</font></h5>
             <p>
-              <a href="" class="text-white" style="text-decoration: none;">TheProviders</a>
+              <a href="" class="text-white" style="text-decoration: none;">GST-Registration/Return</a>
             </p>
             <p>
-              <a href="" class="text-white" style="text-decoration: none;">Creativity</a>
+              <a href="" class="text-white" style="text-decoration: none;">Income Tax Return</a>
             </p>
             <p>
-              <a href="" class="text-white" style="text-decoration: none;">SourceFile</a>
+              <a href="" class="text-white" style="text-decoration: none;">Book Keeping</a>
             </p>
             <p>
-              <a href="" class="text-white" style="text-decoration: none;">Bootstrap</a>
+              <a href="" class="text-white" style="text-decoration: none;">PAN</a>
             </p>
           </div>
       
@@ -984,6 +1028,25 @@ function myFunction() {
   /* Alert the copied text */
   alert("Copied the text: " + copyText.value);
 }
+</script>
+
+<script>
+  var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
