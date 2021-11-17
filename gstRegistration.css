@@ -150,6 +150,8 @@ html{
   display: flex;
   margin: 20px;
   padding: 20px;
+  position: relative;
+  top: 45px;
 }
 
 #more {
